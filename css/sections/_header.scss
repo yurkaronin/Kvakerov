@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, padding 0.3s;
+  padding-top: 34px;
+  padding-bottom: 20px;
+  color: var(--white);
+  &__grid {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: 405px 1fr;
+  }
+  &__navigation {
+    color: inherit;
+  }
+}
