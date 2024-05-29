@@ -12,4 +12,9 @@
       }
     }
   }
+  &.search-show {
+    .search__form {
+      border: 1px solid var(--black-text);
+    }
+  }
 }

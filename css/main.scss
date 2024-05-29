@@ -13,6 +13,8 @@
 @import "./blocks/wrapper";
 @import "./blocks/logo";
 @import "./blocks/main-nav";
+@import "./blocks/link";
+@import "./blocks/search";
 
 // sections
 @import "./sections/header";
@@ -28,6 +30,7 @@
 @import "./activity/header-sticky";
 @import "./activity/menu-open";
 @import "./activity/mobile-nav-accordion";
+@import "./activity/search-show";
 
 // effects
 @import "./effects/click";
