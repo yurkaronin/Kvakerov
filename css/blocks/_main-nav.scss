@@ -37,6 +37,9 @@
     }
     svg {
       transition: transform 0.3s;
+      width: 10px;
+      height: 6px;
+      display: block;
     }
   }
   &__sub-list {
@@ -51,6 +54,7 @@
     color: var(--grey-text);
     border-radius: 0 0 30px 0;
     overflow: hidden;
+    border: 1px solid var(--line);
 
     opacity: 0;
     pointer-events: none;
