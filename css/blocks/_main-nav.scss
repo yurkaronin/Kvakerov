@@ -1,4 +1,8 @@
 .main-nav {
+  &__header {
+    display: none;
+  }
+
   &__list {
     margin: 0;
     padding: 0;
@@ -7,9 +11,11 @@
     gap: 32px;
     grid-template-columns: repeat(4, auto);
   }
+
   &__item {
     position: relative;
     max-width: max-content;
+
     &:after {
       content: "";
       display: block;
@@ -23,6 +29,7 @@
       transition: width 0.3s, opacity 0.3s;
     }
   }
+
   &__link {
     padding: 16px 2px;
     display: block;
@@ -35,6 +42,7 @@
       grid-template-columns: 1fr auto;
       max-width: max-content;
     }
+
     svg {
       transition: transform 0.3s;
       width: 10px;
@@ -42,6 +50,7 @@
       display: block;
     }
   }
+
   &__sub-list {
     margin: 0;
     padding: 0;
@@ -61,6 +70,7 @@
     visibility: hidden;
     transition: all 0.3s;
   }
+
   &__sub-link {
     font-weight: 400;
     font-size: 14px;
@@ -68,11 +78,13 @@
     padding: 12px 25px;
     display: block;
     transition: background-color 0.3s, color 0.3s;
+
     &:hover {
       background-color: var(--bg);
       color: var(--black);
     }
   }
+
   &__sub-item:not(:last-of-type) &__sub-link {
     border-bottom: 1px solid var(--line);
   }
@@ -83,17 +95,51 @@
       opacity: 1;
       width: 100%;
     }
+
     .main-nav__link {
       color: var(--yellow);
     }
+
     .main-nav__link svg {
       transform: rotate(-180deg);
     }
+
     .main-nav__sub-list {
       top: 100%;
       opacity: 1;
       pointer-events: initial;
       visibility: initial;
+    }
+  }
+
+  @media (max-width: 1380px) {
+    padding: 12px 25px;
+    &__header {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr auto;
+    }
+
+    &__title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 35px;
+      // color: inherit;
+
+    }
+    &__close {
+      border: none;
+      background-color: transparent;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    &__list {
     }
   }
 }

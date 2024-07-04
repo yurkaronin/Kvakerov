@@ -11,10 +11,11 @@
 @import "./blocks/button";
 @import "./blocks/title";
 @import "./blocks/wrapper";
-@import "./blocks/logo";
 @import "./blocks/main-nav";
 @import "./blocks/link";
 @import "./blocks/search";
+@import "./blocks/social";
+@import "./blocks/button-menu";
 
 // sections
 @import "./sections/header";
@@ -24,7 +25,7 @@
 @import "./sections/footer";
 
 // pages
-// @import "./pages/inner-page";
+@import "./pages/page";
 
 // activity
 @import "./activity/header-sticky";
@@ -34,3 +35,5 @@
 
 // effects
 @import "./effects/click";
+
+// @media (max-width: 1380px)
