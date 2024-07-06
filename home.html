@@ -46,24 +46,35 @@
 
         <!-- Основная навигация  -->
         <div class="header__grid-item header__navigation">
+
           <nav class="main-nav">
             <div class="main-nav__header">
               <h3 class="main-nav__title">Меню</h3>
               <button class="main-nav__close js-menu-btn" title="Закрыть меню">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.53551 20.0349C0.884633 20.6857 0.884632 21.741 1.53551 22.3919C2.18638 23.0428 3.24165 23.0428 3.89253 22.3919L22.7487 3.53571C23.3996 2.88484 23.3996 1.82956 22.7487 1.17869C22.0978 0.527813 21.0426 0.527814 20.3917 1.17869L1.53551 20.0349Z" fill="#484646"/>
-                <path d="M3.53551 1.39189C2.88463 0.741017 1.82936 0.741016 1.17848 1.39189C0.527609 2.04276 0.527609 3.09804 1.17848 3.74891L20.0347 22.6051C20.6855 23.256 21.7408 23.256 22.3917 22.6051C23.0426 21.9542 23.0426 20.8989 22.3917 20.2481L3.53551 1.39189Z" fill="#484646"/>
+                  <path
+                    d="M1.53551 20.0349C0.884633 20.6857 0.884632 21.741 1.53551 22.3919C2.18638 23.0428 3.24165 23.0428 3.89253 22.3919L22.7487 3.53571C23.3996 2.88484 23.3996 1.82956 22.7487 1.17869C22.0978 0.527813 21.0426 0.527814 20.3917 1.17869L1.53551 20.0349Z"
+                    fill="#484646" />
+                  <path
+                    d="M3.53551 1.39189C2.88463 0.741017 1.82936 0.741016 1.17848 1.39189C0.527609 2.04276 0.527609 3.09804 1.17848 3.74891L20.0347 22.6051C20.6855 23.256 21.7408 23.256 22.3917 22.6051C23.0426 21.9542 23.0426 20.8989 22.3917 20.2481L3.53551 1.39189Z"
+                    fill="#484646" />
                 </svg>
-                </button>
+              </button>
             </div>
             <ul class="main-nav__list">
 
               <li class="main-nav__item">
-                <a class="main-nav__link">
+                <a class="main-nav__link" href="#">
                   <span>Каталог</span>
                   <svg>
                     <use href="./svg/sprite.svg#icon-arrow-down"></use>
                   </svg>
+                  <button class="main-nav__button" type="button" title="показать подкатегории">
+                    <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26 2L14 14L2 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+
+                  </button>
                 </a>
                 <ul class="main-nav__sub-list">
                   <li class="main-nav__sub-item">
@@ -103,6 +114,16 @@
               </li>
             </ul>
           </nav>
+
+          <!-- Контактная инфа только для мобильных  -->
+          <div class="header__mobile-contacts">
+              <b>Отдел продаж: </b>
+              <a class="phone" href="tel:78003508341">7 (800) 350-83-41</a>
+              <a class="link" href="#">Заказать звонок</a>
+          </div>
+
+
+
         </div>
 
         <!-- Заказать звонок  -->
@@ -220,6 +241,7 @@
   <script src="./js/parts/sticky-header.js"></script>
   <script src="./js/parts/search-show.js"></script>
   <script src="./js/parts/mobile-menu-and-button.js"></script>
+  <script src="./js/parts/mobile-menu-accordion.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

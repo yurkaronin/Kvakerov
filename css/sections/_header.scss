@@ -27,6 +27,11 @@
     grid-template-columns: auto 1fr;
     align-items: center;
 
+    a {
+      max-width: max-content;
+      display: block;
+    }
+
     svg {
       display: block;
       width: 167px;
@@ -39,6 +44,15 @@
       display: block;
     }
   }
+
+  &__button-menu {
+    display: none;
+  }
+
+  &__mobile-contacts {
+    display: none;
+  }
+
 
   @media (min-width: 1381px) {
     &__social {
@@ -86,6 +100,53 @@
       display: block;
       z-index: 10;
       transition: all 0.3s;
+      overflow-y: auto;
+    }
+
+    &__mobile-contacts {
+      display: block;
+      padding: 25px 25px 40px;
+
+      b {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 110%;
+        color: var(--black-text);
+      }
+
+      .phone {
+        display: block;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      link {
+        display: block;
+      }
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &__grid {
+      gap: 12px;
+      grid-template-columns: 1fr auto auto;
+    }
+
+    &__logo {
+      display: block;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__social {
+      display: none;
     }
   }
 }
