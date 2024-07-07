@@ -1198,7 +1198,9 @@ input[type=radio].visually-hidden {
   scale: 1.1;
   background-color: var(--yellow);
 }
-
+.swiper-button--mod {
+  background-color: var(--bg);
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: var(--black-text);
@@ -1226,6 +1228,10 @@ input[type=radio].visually-hidden {
   line-height: 120%;
   color: var(--grey-text);
   margin-bottom: 16px;
+}
+.partner-card__logo {
+  display: block;
+  margin: auto;
 }
 .header {
   position: fixed;
@@ -1524,6 +1530,10 @@ input[type=radio].visually-hidden {
   right: auto;
   top: -230px;
   left: 10%;
+}
+
+.partners .swiper {
+  padding-bottom: 50px;
 }
 
 .header-sticky .header {

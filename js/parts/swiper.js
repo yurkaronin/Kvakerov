@@ -49,7 +49,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   } else {
     console.log('Слайдера reviews__slider НЕТ');
-  }
+  };
+
+
+  // Слайдер с логотипами партнёров
+  if(document.querySelector('.partners__slider')) {
+    console.log('Слайдер partners__slider ЕСТЬ');
+    const swiper = new Swiper(".partners__slider .swiper", {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".partners__slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".partners .swiper-button-next",
+        prevEl: ".partners .swiper-button-prev",
+      },
+    });
+
+  } else {
+    console.log('Слайдера reviews__slider НЕТ');
+  };
 
 
 });
