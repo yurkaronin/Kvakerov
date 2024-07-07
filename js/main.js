@@ -1,6 +1,8 @@
-// document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener("DOMContentLoaded", function() {
 
 // });
+
+
 
 // техническая часть - УДАЛИТЬ НА ПРОДАКШЕНЕ!
 // получить в консоли элемент, по которому кликнули
