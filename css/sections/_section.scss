@@ -1,5 +1,5 @@
 .section {
-  // position: relative;
+  position: relative;
   // background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) 0 0,
   //   linear-gradient(225deg, #f0f0f0 25%, transparent 25%) 0 0,
   //   linear-gradient(315deg, transparent 75%, #f0f0f0 75%) 0 0,
@@ -12,9 +12,16 @@
   &__header {
     margin-bottom: 40px;
   }
+  &__footer {
+    margin-top: 50px;
+  }
 }
 
 .section--black {
   background-color: var(--bg-2);
   color: var(--white);
+}
+
+.section--gray {
+  background-color: var(--bg-3);
 }
