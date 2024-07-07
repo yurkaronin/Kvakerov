@@ -17,9 +17,17 @@
   }
 }
 
+.section--white {
+  background-color: var(--white);
+}
+
 .section--black {
   background-color: var(--bg-2);
   color: var(--white);
+
+  .title {
+    color: inherit;
+  }
 }
 
 .section--gray {

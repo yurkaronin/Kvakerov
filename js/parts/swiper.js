@@ -9,13 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.hero-home__slider .swiper', {
       // Optional parameters
       loop: true,
-      // slidesPerView: 1,
-      // spaceBetween: 30,
-      // effect: "fade",
       speed: 600,
       parallax: true,
-      // centeredSlides: true,
-
       autoplay: {
         delay: 25000,
         disableOnInteraction: true
@@ -29,6 +24,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   } else {
     console.log('Слайдера hero-home__slider НЕТ');
+  };
+
+  // Слайдер с отзывами reviews__slider
+  if(document.querySelector('.reviews__slider')) {
+    console.log('Слайдер reviews__slider ЕСТЬ');
+
+    const swiper = new Swiper(".reviews__slider .swiper", {
+      spaceBetween: 30,
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".reviews__slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".reviews .swiper-button-next",
+        prevEl: ".reviews .swiper-button-prev",
+      },
+    });
+  } else {
+    console.log('Слайдера reviews__slider НЕТ');
   }
 
 
