@@ -54,18 +54,10 @@
   }
 
 
-  @media (min-width: 1381px) {
     &__social {
-      // display: none;
-      position: absolute;
-      left: 10%;
-      top: calc(50vh - 50%);
-
-      .social__list {
-        grid-template-columns: repeat(1, auto);
-      }
+      display: none;
     }
-  }
+
 
   @media (max-width: 1380px) {
     &__callback {
@@ -74,6 +66,7 @@
 
     &__social {
       margin-left: auto;
+      display: block;
     }
 
     &__button-menu {

@@ -995,15 +995,8 @@ input[type=radio].visually-hidden {
 .header__mobile-contacts {
   display: none;
 }
-@media (min-width: 1381px) {
-  .header__social {
-    position: absolute;
-    left: 10%;
-    top: calc(50vh - 50%);
-  }
-  .header__social .social__list {
-    grid-template-columns: repeat(1, auto);
-  }
+.header__social {
+  display: none;
 }
 @media (max-width: 1380px) {
   .header__callback {
@@ -1011,6 +1004,7 @@ input[type=radio].visually-hidden {
   }
   .header__social {
     margin-left: auto;
+    display: block;
   }
   .header__button-menu {
     display: block;
@@ -1081,6 +1075,10 @@ input[type=radio].visually-hidden {
   color: var(--white);
 }
 
+.hero-home {
+  position: relative;
+  overflow: hidden;
+}
 .hero-home__figure {
   position: absolute;
   display: block;
@@ -1134,11 +1132,25 @@ input[type=radio].visually-hidden {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.hero-home__social {
+  position: absolute;
+  left: 6%;
+  top: calc(50% - 67.5px);
+  z-index: 3;
+}
+.hero-home__social .social__list {
+  grid-template-columns: repeat(1, auto);
+}
 .hero-home .swiper {
   width: 100%;
   min-height: 100vh;
   padding-top: 110px;
   padding-bottom: 90px;
+}
+@media (max-width: 1380px) {
+  .hero-home__social {
+    display: none;
+  }
 }
 
 .header-sticky .header {
