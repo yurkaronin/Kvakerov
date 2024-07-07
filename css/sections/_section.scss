@@ -1,9 +1,14 @@
 .section {
-  position: relative;
-  background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) 0 0,
-    linear-gradient(225deg, #f0f0f0 25%, transparent 25%) 0 0,
-    linear-gradient(315deg, transparent 75%, #f0f0f0 75%) 0 0,
-    linear-gradient(45deg, transparent 75%, #f0f0f0 75%) 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // position: relative;
+  // background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) 0 0,
+  //   linear-gradient(225deg, #f0f0f0 25%, transparent 25%) 0 0,
+  //   linear-gradient(315deg, transparent 75%, #f0f0f0 75%) 0 0,
+  //   linear-gradient(45deg, transparent 75%, #f0f0f0 75%) 0 0;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.section--black {
+  background-color: var(--bg-2);
+  color: var(--white);
 }

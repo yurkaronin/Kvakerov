@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Список страниц проекта</title>
 
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -218,27 +219,86 @@
 
   <!-- Основной контент  -->
   <main class="main">
-    <h1 class="visually-hidden">Главный заголовок страницы, который визуально скрыт</h1>
+    <h1 class="visually-hidden">Колорсортеры фотосепараторы Сапсан</h1>
 
     <!-- Первый экран главной страницы  -->
-    <section class="hero-home">
-      <div class="wrapper">
+    <section class="hero-home section section--black">
+
         <!-- Слайдер в первом экране  -->
         <div class="hero-home__slider">
-          <div class="hero-home__slide">
-            <span class="hero-home__label">Чистота продукта до 99,99%</span>
-            <h2 class="hero-home__slide-title">Колорсортер Сапсан</h2>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="hero-home__slide">
 
-            <img src="./img/hero-home/slide-1.png" alt="фото оборудования" class="hero-home__slide-image" width="481"
-              loading="lazy">
-            <p class="hero-home__text">Протестируй колосортер перед покупкой бесплатно</p>
+                  <div class="wrapper">
 
-            <a href="#" class="hero-home__button button"><span>Протестировать</span></a>
+                    <div class="hero-home__figure" data-swiper-parallax="-1100"></div>
+
+                    <div class="hero-home__grid">
+
+                      <div class="hero-home__grid-item hero-home__grid-item-left">
+                        <span class="hero-home__label" data-swiper-parallax="-200">Чистота продукта до <b>99,99%</b></span>
+                        <h2 class="hero-home__slide-title" data-swiper-parallax="-400">
+                          Колорсортер Сапсан</h2>
+                        <p class="hero-home__text" data-swiper-parallax="-600">Протестируй колосортер перед покупкой <b>бесплатно</b></p>
+                        <a href="#" class="hero-home__button button" data-swiper-parallax="-750"><span>Протестировать</span></a>
+                      </div>
+
+                      <div class="hero-home__grid-item hero-home__grid-item-right">
+                        <div class="hero-home__slide-image" data-swiper-parallax="-900">
+                          <img src="./img/hero-home/slide-1.png" alt="фото оборудования" width="481" loading="lazy">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="hero-home__slide">
+
+                  <div class="wrapper">
+
+                    <div class="hero-home__figure" data-swiper-parallax="-1100"></div>
+
+                    <div class="hero-home__grid">
+
+                      <div class="hero-home__grid-item hero-home__grid-item-left">
+                        <span class="hero-home__label" data-swiper-parallax="-200">Чистота продукта до <b>99,99%</b></span>
+                        <h2 class="hero-home__slide-title" data-swiper-parallax="-400">
+                          Колорсортер Сапсан</h2>
+                        <p class="hero-home__text" data-swiper-parallax="-600">Протестируй колосортер перед покупкой <b>бесплатно</b></p>
+                        <a href="#" class="hero-home__button button" data-swiper-parallax="-750"><span>Протестировать</span></a>
+                      </div>
+
+                      <div class="hero-home__grid-item hero-home__grid-item-right">
+                        <div class="hero-home__slide-image" data-swiper-parallax="-900">
+                          <img src="./img/hero-home/slide-1.png" alt="фото оборудования" width="481" loading="lazy">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
 
           </div>
+
         </div>
 
-      </div>
     </section>
 
     <!-- Список продуктов сортировки  -->
@@ -923,10 +983,14 @@
 
   </div>
 
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./js/parts/swiper.js"></script>
+
   <script src="./js/parts/sticky-header.js"></script>
   <script src="./js/parts/search-show.js"></script>
   <script src="./js/parts/mobile-menu-and-button.js"></script>
   <script src="./js/parts/mobile-menu-accordion.js"></script>
+
   <script src="./js/main.js"></script>
 </body>
 

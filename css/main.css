@@ -12,10 +12,13 @@
   --yellow3: #d3ae5d;
   --yellow4: #bc9d2e;
   --bg: #f0f0f0;
+  --bg-2: #1c1c1c;
   --line: #dddddd;
   --grey-text: #606060;
   --grey-text2: #adadad;
   --black-text: #282828;
+  --swiper-theme-color: #fed337;
+  --swiper-pagination-bullet-inactive-color: #dddddd;
 }
 
 /* golos-text-regular - cyrillic_latin */
@@ -1073,11 +1076,69 @@ input[type=radio].visually-hidden {
   }
 }
 
-.section {
-  position: relative;
-  background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) 0 0, linear-gradient(225deg, #f0f0f0 25%, transparent 25%) 0 0, linear-gradient(315deg, transparent 75%, #f0f0f0 75%) 0 0, linear-gradient(45deg, transparent 75%, #f0f0f0 75%) 0 0;
+.section--black {
+  background-color: var(--bg-2);
+  color: var(--white);
+}
+
+.hero-home__figure {
+  position: absolute;
+  display: block;
+  width: 855px;
+  height: 1088px;
+  top: 0px;
+  right: 10%;
+  background-image: url("../svg/hero-home-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top right;
+  z-index: 0;
+}
+.hero-home__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-home__label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 10px;
+}
+.hero-home__slide-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.hero-home__text {
+  margin: 0;
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.hero-home__slide-image img {
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 644px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero-home .swiper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 110px;
+  padding-bottom: 90px;
 }
 
 .header-sticky .header {
@@ -1143,4 +1204,35 @@ input[type=radio].visually-hidden {
 .click:active {
   transform: translateY(1px);
   transition: transform 0.1s ease;
+}
+
+.autoplay-progress {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }/*# sourceMappingURL=main.css.map */
