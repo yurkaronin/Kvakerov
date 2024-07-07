@@ -2,8 +2,8 @@
   .header {
     background-color: var(--white);
     color: var(--black);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     .logo {
       color: var(--grey-text);
 
@@ -11,6 +11,9 @@
         color: var(--grey-text);
       }
     }
+  }
+  .logotype__text {
+    fill: var(--black-text);
   }
   &.search-show {
     .search__form {
