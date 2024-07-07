@@ -6,6 +6,12 @@
   //   linear-gradient(45deg, transparent 75%, #f0f0f0 75%) 0 0;
   // background-repeat: no-repeat;
   // background-size: cover;
+  padding-top: 64px;
+  padding-bottom: 48px;
+
+  &__header {
+    margin-bottom: 40px;
+  }
 }
 
 .section--black {
