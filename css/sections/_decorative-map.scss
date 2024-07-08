@@ -1,12 +1,28 @@
 .decorative-map {
   position: relative;
-  // overflow: hidden;
+  padding-bottom: 60px;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background-color: inherit;
+    z-index: 0;
+  }
 
   .figure {
     opacity: 0.5;
     right: auto;
     left: -12%;
     top: 5px;
+    z-index: 1;
+  }
+  .wrapper {
+    position: relative;
+    z-index: 2;
   }
 
   &__image {

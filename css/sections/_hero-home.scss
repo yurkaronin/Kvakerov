@@ -1,7 +1,18 @@
 .hero-home {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 0;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+    background-color: inherit;
+    z-index: 0;
+  }
 
   .figure {
     top: 0px;
@@ -82,5 +93,11 @@
     &__social {
       display: none;
     }
+  }
+
+  .swiper-pagination {
+    bottom: 15%;
+    left: 12%;
+    width: max-content;
   }
 }
