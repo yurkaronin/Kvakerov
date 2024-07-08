@@ -1,9 +1,25 @@
 .form {
+
+  &--mod {
+    background-color: #2f2f2f;
+    border-radius: 30px 0 0 0;
+    padding: 37px 47px 43px;
+  }
+  &__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 30px;
+  }
   &__grid {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
+    &--mod {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__item {
@@ -17,13 +33,12 @@
       background-color: transparent;
       padding: 20px 0;
       height: 60px;
-      font-weight: 600;
+      font-weight: 400;
       font-size: 13px;
       line-height: 157%;
       color: #fff;
 
       outline: none;
-
     }
 
     &--two {
@@ -52,7 +67,6 @@
   }
 
   &__footer {
-
   }
   &__agree {
     display: grid;
