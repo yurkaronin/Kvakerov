@@ -25,11 +25,16 @@
 @import "./blocks/review-card";
 @import "./blocks/partner-card";
 @import "./blocks/transform";
+@import "./blocks/breadcrumbs";
+@import "./blocks/custom-review";
+@import "./blocks/photo-slider";
+@import "./blocks/big-cite";
 
 // sections
 @import "./sections/header";
 
 @import "./sections/section";
+@import "./sections/inner-top";
 @import "./sections/hero-home";
 @import "./sections/items-tags";
 @import "./sections/previews";
@@ -38,6 +43,7 @@
 @import "./sections/reviews";
 @import "./sections/partners";
 @import "./sections/decorative-map";
+@import "./sections/article-full";
 
 @import "./sections/footer";
 @import "./sections/modal";

@@ -7,6 +7,10 @@
   padding-top: 30px;
   padding-bottom: 30px;
   color: var(--white);
+  &--mod {
+    background-color: var(--bg-2);
+    color: var(--white);
+  }
 
   &__grid {
     display: grid;
@@ -53,11 +57,9 @@
     display: none;
   }
 
-
-    &__social {
-      display: none;
-    }
-
+  &__social {
+    display: none;
+  }
 
   @media (max-width: 1380px) {
     &__callback {
@@ -118,7 +120,6 @@
         display: block;
       }
     }
-
   }
 
   @media (max-width: 767px) {

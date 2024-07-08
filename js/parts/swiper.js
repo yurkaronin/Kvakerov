@@ -77,5 +77,56 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Слайдера reviews__slider НЕТ');
   };
 
+  // Слайдер с кастомными отзывами
+  if(document.querySelector('.custom-review__slider')) {
+    console.log('Слайдер custom-review__slider ЕСТЬ');
+    const swiper = new Swiper(".custom-review__slider .swiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".custom-review__slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".custom-review__slider .swiper-button-next",
+        prevEl: ".custom-review__slider .swiper-button-prev",
+      },
+    });
+
+  } else {
+    console.log('Слайдера custom-review__slider НЕТ');
+  };
+
+  // Слайдер с фотогалереей на всю ширину
+  if(document.querySelector('.photo-slider')) {
+    console.log('Слайдер photo-slider ЕСТЬ');
+    const swiper = new Swiper(".photo-slider .swiper", {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      loop: true,
+      freeMode: true,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".photo-slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".photo-slider .swiper-button-next",
+        prevEl: ".photo-slider .swiper-button-prev",
+      }
+    });
+
+  } else {
+    console.log('Слайдера photo-slider НЕТ');
+  };
+
 
 });
