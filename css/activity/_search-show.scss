@@ -6,6 +6,9 @@
     width: 715px;
     background-color: var(--white);
   }
+  .header__search .js-show-search {
+    opacity: 0;
+  }
 
   @media (max-width: 767px) {
     .search__form {
