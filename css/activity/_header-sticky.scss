@@ -5,6 +5,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--bg);
+
     .logo {
       color: var(--grey-text);
 
@@ -12,19 +13,36 @@
         color: var(--grey-text);
       }
     }
+
     .link {
       color: inherit;
     }
   }
+
   .header__logo span {
     color: var(--black);
   }
+
   .logotype__text {
     fill: var(--black-text);
   }
+
   &.search-show {
     .search__form {
       border: 1px solid var(--black-text);
+    }
+  }
+
+  .button-menu span,
+  .button-menu span::after,
+  .button-menu span::before {
+
+    background-color: #545454;
+  }
+
+  @media (max-width: 1380px) {
+    .header .button--search {
+      color: #545454;
     }
   }
 }

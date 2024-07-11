@@ -1,8 +1,10 @@
 .figure {
   position: absolute;
   display: block;
-  width: 855px;
-  height: 1088px;
+  // width: 855px;
+  // height: 1088px;
+  width: 55%;
+  height: 160%;
   top: 0px;
   right: 10%;
   background-image: url("../svg/hero-home-bg.svg");
@@ -10,6 +12,8 @@
   background-position: top right;
   z-index: 0;
   pointer-events: none;
+  background-size: contain;
+
   &--mod {
     opacity: 0.1;
   }
