@@ -28,4 +28,8 @@
   // --swiper-scrollbar-bg-color: #e5e5e5;
 
   --darkblue-06: rgba(19, 23, 48, 0.6);
+
+  @media (max-width: 1500px) {
+    --swiper-navigation-sides-offset: 10px;
+  }
 }

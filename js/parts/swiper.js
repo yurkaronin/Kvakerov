@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".reviews__slider .swiper", {
       spaceBetween: 30,
       loop: true,
-      centeredSlides: true,
       autoplay: {
         delay: 25000,
         disableOnInteraction: false,
@@ -52,8 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".partners__slider")) {
     console.log("Слайдер partners__slider ЕСТЬ");
     const swiper = new Swiper(".partners__slider .swiper", {
-      slidesPerView: 6,
-      spaceBetween: 30,
       loop: true,
       autoplay: {
         delay: 25000,
@@ -67,9 +64,25 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".partners .swiper-button-next",
         prevEl: ".partners .swiper-button-prev",
       },
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        551: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        767: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+      },
     });
-  } else {
-    console.log("Слайдера reviews__slider НЕТ");
   }
 
   // Слайдер с кастомными отзывами
@@ -92,8 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: ".custom-review__slider .swiper-button-prev",
       },
     });
-  } else {
-    console.log("Слайдера custom-review__slider НЕТ");
   }
 
   // Слайдер с фотогалереей на всю ширину
@@ -140,7 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".previews-slider .swiper-button-next",
         prevEl: ".previews-slider .swiper-button-prev",
       },
-      // Responsive breakpoints
       breakpoints: {
         320: {
           slidesPerView: 1,

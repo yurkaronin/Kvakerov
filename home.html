@@ -846,9 +846,9 @@
           <div class="section__footer">
 
             <div class="swiper-button-group">
-               <!-- If we need navigation buttons -->
-               <div class="swiper-button swiper-button-prev"></div>
-               <div class="swiper-button swiper-button-next"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button swiper-button-prev"></div>
+              <div class="swiper-button swiper-button-next"></div>
             </div>
             <a href="#" class="button button--center"><span>весь ассортимент</span></a>
           </div>
@@ -1074,25 +1074,40 @@
                     <div class="review-card__grid">
                       <div class="review-card__item review-card__item--left">
                         <div class="review-card__media">
-                          <iframe width="100%" height="315"
-                            src="https://www.youtube-nocookie.com/embed/uIDG-cfT-Ag?si=DDPG7KTjtZlkOw4T&amp;controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                          <!-- Локальный файл видео  -->
+                          <div class="media-file media-file--video">
+                            <a data-poster="./img/video/bg-1.jpg" data-fslightbox="html5-demo-videos"
+                              href="./video/review-1.mp4">
+                              <img class="img" src="./img/video/bg-1.jpg" alt="Big Black Bunny Fullscreen Lightbox">
+                              <!-- декоративная кнопка  -->
+                              <div class="media-file__button button button--play">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M17 9L1 1L1 17L17 9Z" stroke="#31333D" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                </svg>
+
+                              </div>
+                            </a>
+                          </div>
+
                         </div>
                       </div>
                       <div class="review-card__item review-card__item--right">
-                        <div class="rreview-card__logo">
+                        <div class="review-card__logo">
                           <img src="./img/reviews/1.png" alt="Логотип компании" loading="lazy">
                         </div>
-                        <p class="review-card__text">У нас появился фотосепаратор Сапсан.
-                          Эта птичка помогает нам на производстве избавляться от дефектного зерна для более чистого
-                          вкуса в
-                          чашке.
-                          Сапсан – это отечественная разработка для очистки
-                          от примесей любого сыпучего продукта.
-                          Есть распространенные модели фотосепараторов из Японии, Дании
-                          и Швейцарии, но мы приняли решение поддержать отечественный продукт</p>
+                        <div class="review-card__text">
+                          <p>У нас появился фотосепаратор Сапсан.
+                            Эта птичка помогает нам на производстве избавляться от дефектного зерна для более чистого
+                            вкуса в
+                            чашке.
+                            Сапсан – это отечественная разработка для очистки
+                            от примесей любого сыпучего продукта.
+                            Есть распространенные модели фотосепараторов из Японии, Дании
+                            и Швейцарии, но мы приняли решение поддержать отечественный продукт</p>
+                        </div>
 
                         <a href="#" class="review-card__button button button--secondary"><span>Подробнее</span></a>
                       </div>
@@ -1107,25 +1122,72 @@
                     <div class="review-card__grid">
                       <div class="review-card__item review-card__item--left">
                         <div class="review-card__media">
-                          <iframe width="100%" height="315"
-                            src="https://www.youtube-nocookie.com/embed/uIDG-cfT-Ag?si=DDPG7KTjtZlkOw4T&amp;controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <div class="media-file media-file--youtube">
+                            <a data-fslightbox="html5-youtube-videos"
+                              href="https://www.youtube.com/watch?v=uIDG-cfT-Ag">
+                              <img class="img" src="./img/video/bg-1.jpg" alt="Название видео">
+                              <!-- декоративная кнопка  -->
+                              <div class="media-file__button button button--play">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M17 9L1 1L1 17L17 9Z" stroke="#31333D" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                </svg>
+
+                              </div>
+                            </a>
+                          </div>
                         </div>
                       </div>
                       <div class="review-card__item review-card__item--right">
-                        <div class="rreview-card__logo">
+                        <div class="review-card__logo">
                           <img src="./img/reviews/1.png" alt="Логотип компании" loading="lazy">
                         </div>
-                        <p class="review-card__text">У нас появился фотосепаратор Сапсан.
-                          Эта птичка помогает нам на производстве избавляться от дефектного зерна для более чистого
-                          вкуса в
-                          чашке.
-                          Сапсан – это отечественная разработка для очистки
-                          от примесей любого сыпучего продукта.
-                          Есть распространенные модели фотосепараторов из Японии, Дании
-                          и Швейцарии, но мы приняли решение поддержать отечественный продукт</p>
+                        <div class="review-card__text">
+                          <p>У нас появился фотосепаратор Сапсан.
+                            Эта птичка помогает нам на производстве избавляться от дефектного зерна для более чистого
+                            вкуса в
+                            чашке.
+                            Сапсан – это отечественная разработка для очистки
+                            от примесей любого сыпучего продукта.
+                            Есть распространенные модели фотосепараторов из Японии, Дании
+                            и Швейцарии, но мы приняли решение поддержать отечественный продукт</p>
+                        </div>
+
+                        <a href="#" class="review-card__button button button--secondary"><span>Подробнее</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Слайд  -->
+                <div class="swiper-slide">
+                  <!-- Карточка отзыва  -->
+                  <div class="reviews__slide review-card">
+                    <div class="review-card__grid">
+                      <div class="review-card__item review-card__item--left">
+                        <div class="review-card__media">
+                          <div class="media-file">
+                            <a class="media-file__image" href="./img/video/bg-1.jpg" data-fslightbox="media-images">
+                              <img src="./img/video/bg-1.jpg" alt="фото" loading="lazy">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-card__item review-card__item--right">
+                        <div class="review-card__logo">
+                          <img src="./img/reviews/1.png" alt="Логотип компании" loading="lazy">
+                        </div>
+                        <div class="review-card__text">
+                          <p>У нас появился фотосепаратор Сапсан.
+                            Эта птичка помогает нам на производстве избавляться от дефектного зерна для более чистого
+                            вкуса в
+                            чашке.
+                            Сапсан – это отечественная разработка для очистки
+                            от примесей любого сыпучего продукта.
+                            Есть распространенные модели фотосепараторов из Японии, Дании
+                            и Швейцарии, но мы приняли решение поддержать отечественный продукт</p>
+                        </div>
 
                         <a href="#" class="review-card__button button button--secondary"><span>Подробнее</span></a>
                       </div>
@@ -1143,9 +1205,10 @@
           </div>
         </div>
         <div class="section__footer">
-          <div class="reviews__navigation">
-            <div class="swiper-button swiper-button-next"></div>
+          <div class="reviews__navigation swiper-button-group">
             <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
+
           </div>
           <a href="#" class="button button--center"><span>Посмотреть все отзывы</span></a>
         </div>
@@ -1242,8 +1305,14 @@
 
 
           </div>
-          <div class="swiper-button swiper-button--mod swiper-button-next"></div>
-          <div class="swiper-button swiper-button--mod swiper-button-prev"></div>
+
+        </div>
+
+        <div class="section__footer">
+          <div class="partners__navigation swiper-button-group">
+            <div class="swiper-button swiper-button--mod swiper-button-prev"></div>
+            <div class="swiper-button swiper-button--mod swiper-button-next"></div>
+          </div>
         </div>
 
       </div>
@@ -1376,7 +1445,7 @@
       <div class="section__body">
         <div class="footer__grid">
 
-          <div class="footer__column">
+          <div class="footer__column footer__column--first">
             <!-- Логотип  -->
             <div class="footer__logotype">
               <svg width="167" height="42" viewBox="0 0 167 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1489,7 +1558,8 @@
               </ul>
             </div>
           </div>
-          <div class="footer__column">
+
+          <div class="footer__column footer__column--mod">
             <div class="footer__form">
               <div class="form form--mod">
                 <div class="form__title">Форма обратной связи</div>

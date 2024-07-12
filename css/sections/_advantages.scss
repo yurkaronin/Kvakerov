@@ -33,3 +33,26 @@
     color: var(--grey-text);
   }
 }
+
+@media (max-width: 1024px) {
+  .advantages__list {
+    gap: 22px 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__list {
+    gap: 22px 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .advantages__item {
+    padding-left: 90px;
+  }
+}
+
+@media (max-width: 550px) {
+  .advantages__item {
+    padding-left: 75px;
+  }
+}

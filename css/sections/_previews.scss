@@ -3,6 +3,9 @@
   .figure {
     top: -170px;
   }
+  .swiper {
+    padding-bottom: 50px;
+  }
   &__list {
     position: relative;
     z-index: 2;
@@ -11,9 +14,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .swiper {
-    padding-bottom: 50px;
-  }
   .swiper-slide {
     height: auto;
   }
@@ -22,9 +22,6 @@
     .button {
       max-width: 100%;
     }
-  }
-  .swiper-button-group {
-    margin-bottom: 24px;
   }
 }
 

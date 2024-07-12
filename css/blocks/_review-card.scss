@@ -34,13 +34,78 @@
 
   &__text {
     margin: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
     color: var(--grey-text);
     margin-bottom: 16px;
+    position: relative;
+    p {
+      position: relative;
+      margin-top: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 117px;
+      height: 88px;
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      background-image: url(../svg/cite.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 0;
+    }
   }
 
   &__button {
+  }
+}
+
+@media (max-width: 1023px) {
+  .review-card {
+    padding: 45px 40px;
+  }
+  .review-card__grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  .review-card__item--right {
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+  }
+  .review-card__text {
+    margin-bottom: 0;
+  }
+  .review-card__text::before {
+    top: -30px;
+    left: -30px;
+  }
+  .review-card__logo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .review-card {
+    padding: 25px 20px;
+  }
+  .review-card__logo {
+    max-width: 130px;
+    margin-bottom: 12px;
+  }
+  .review-card__item--right {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .review-card__grid {
+    gap: 30px;
+  }
+  .review-card__text::before {
+    scale: 0.6;
+    left: initial;
+    right: -30px;
   }
 }

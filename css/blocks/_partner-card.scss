@@ -1,11 +1,21 @@
 .partner-card {
+}
 
-  &__logo {
-    display: block;
-    margin: auto;
-  }
+.partner-card__logo {
+  margin: auto;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  &__name {
+.partner-card__name {
+}
 
+@media (max-width: 1023px) {
+  .partner-card__logo {
+    width: 85px;
+    height: 85px;
   }
 }
