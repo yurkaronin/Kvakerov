@@ -31,6 +31,7 @@
 @import "./blocks/big-cite";
 @import "./blocks/articles-list";
 @import "./blocks/catalog-filter";
+@import "./blocks/swiper-button-group";
 
 // sections
 @import "./sections/header";
@@ -97,16 +98,16 @@
 
 
 // временно скрываем
-.items-tags {
-  display: none;
-}
-.previews {
-  display: none;
-}
+// .items-tags {
+//   display: none;
+// }
+// .previews {
+//   display: none;
+// }
 
-.contact-us {
-  display: none;
-}
+// .contact-us {
+//   display: none;
+// }
 
 .advantages {
   display: none;

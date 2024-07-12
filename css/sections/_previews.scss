@@ -10,4 +10,22 @@
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .swiper {
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    height: auto;
+  }
+  .section__footer {
+    margin-top: 24px;
+    .button {
+      max-width: 100%;
+    }
+  }
+  .swiper-button-group {
+    margin-bottom: 24px;
+  }
 }
+
+// .previews-slider {}
