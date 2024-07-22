@@ -47,6 +47,14 @@
 
 }
 
+.decorative-map__content {
+  position: relative;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--grey-text2);
+
+
+}
+
 .geo-mark {
   position: absolute;
   top: 50%;

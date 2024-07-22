@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true,
       },
     });
-  } else {
-    console.log("Слайдера hero-home__slider НЕТ");
   }
 
   // Слайдер с отзывами reviews__slider
@@ -41,10 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation: {
         nextEl: ".reviews .swiper-button-next",
         prevEl: ".reviews .swiper-button-prev",
-      },
+      }
     });
-  } else {
-    console.log("Слайдера reviews__slider НЕТ");
   }
 
   // Слайдер с логотипами партнёров
@@ -89,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".custom-review__slider")) {
     console.log("Слайдер custom-review__slider ЕСТЬ");
     const swiper = new Swiper(".custom-review__slider .swiper", {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
       spaceBetween: 30,
       loop: true,
       autoplay: {
@@ -101,9 +97,23 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true,
       },
       navigation: {
-        nextEl: ".custom-review__slider .swiper-button-next",
-        prevEl: ".custom-review__slider .swiper-button-prev",
+        nextEl: ".custom-review .swiper-button-next",
+        prevEl: ".custom-review .swiper-button-prev",
       },
+      // breakpoints: {
+      //   320: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 20,
+      //   },
+      //   767: {
+      //     slidesPerView: 1.35,
+      //     spaceBetween: 30,
+      //   },
+      //   1024: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 30,
+      //   },
+      // },
     });
   }
 
@@ -113,9 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".photo-slider .swiper", {
       slidesPerView: "auto",
       spaceBetween: 30,
-      autoHeight: true,
       loop: true,
-      freeMode: true,
       autoplay: {
         delay: 25000,
         disableOnInteraction: false,
@@ -128,9 +136,21 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".photo-slider .swiper-button-next",
         prevEl: ".photo-slider .swiper-button-prev",
       },
+      breakpoints: {
+        320: {
+          spaceBetween: 16,
+        },
+        551: {
+          spaceBetween: 20,
+        },
+        767: {
+          spaceBetween: 30,
+        },
+        1024: {
+          spaceBetween: 30,
+        },
+      },
     });
-  } else {
-    console.log("Слайдера photo-slider НЕТ");
   }
 
   // Слайдер с карточками анонса товаров

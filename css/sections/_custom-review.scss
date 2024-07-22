@@ -1,4 +1,5 @@
 .custom-review {
+  position: relative;
   &__slider {
     margin-bottom: 40px;
     position: relative;
@@ -9,6 +10,7 @@
     padding: 20px 40px 30px;
     padding-left: 65px;
     min-height: 370px;
+    max-width: 551px;
   }
   &__grid {
     display: grid;
@@ -82,6 +84,60 @@
     font-size: 14px;
     line-height: 120%;
     color: var(--grey-text);
-    margin-bottom: 90px;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    max-width: max-content;
+  }
+
+  .swiper-button-group {
+    display: grid;
+  }
+
+  @media (max-width: 1023px) {
+    .swiper {
+      margin-left: -20px;
+      margin-right: -20px;
+      width: calc(100% + 20px + 20px);
+    }
+  }
+  @media (max-width: 767px) {
+    .custom-review__item {
+      padding: 14px 25px 30px;
+      max-width: 375px;
+    }
+
+    .custom-review__grid {
+      gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .custom-review__text {
+      grid-column: initial;
+    }
+    .custom-review__contacts {
+      order: 11;
+    }
+    .custom-review__text::before {
+      width: 70px;
+      height: 55px;
+      top: -16px;
+      left: -16px;
+    }
+    .custom-review__item--user .custom-review__photo {
+      gap: 10px;
+      grid-template-columns: 1fr;
+      margin-bottom: 12px;
+    }
+
+    .swiper {
+      margin-left: -10px;
+      margin-right: -10px;
+      width: calc(100% + 10px + 10px);
+    }
+    .swiper-button-group {
+      margin-top: 20px;
+    }
+
   }
 }

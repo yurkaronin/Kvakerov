@@ -72,6 +72,10 @@
     color: var(--grey-text);
     font-size: 14px;
     flex-grow: 2;
+    p {
+      position: relative;
+      z-index: 2;
+    }
   }
 
   &__list {

@@ -2,9 +2,10 @@
   .swiper {
     padding-bottom: 50px;
   }
+  &__navigation {
+    display: grid;
+  }
 
-}
 
-.partners__navigation {
-  display: grid;
+
 }
