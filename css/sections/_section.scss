@@ -1,19 +1,22 @@
 .section {
-  position: relative;
+  // position: relative;
   padding-top: 64px;
   padding-bottom: 130px;
 
   &__header {
     margin-bottom: 40px;
   }
+
   &__footer {
     margin-top: 50px;
   }
 }
+
 .section--min {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
 .section--transform {
   margin-top: -90px;
 }
@@ -40,6 +43,7 @@
     padding-top: 55px;
     padding-bottom: 75px;
   }
+
   .section__footer {
     margin-top: 20px;
   }

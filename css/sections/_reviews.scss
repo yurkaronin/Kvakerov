@@ -1,6 +1,5 @@
 .reviews {
-  position: relative;
-  overflow: hidden;
+
 
   .swiper {
     padding-bottom: 50px;
@@ -8,12 +7,6 @@
 
   .swiper-button-group {
     display: block;
-  }
-
-  .figure {
-    right: auto;
-    top: -230px;
-    left: 10%;
   }
 
   @media (max-width: 1440px) {

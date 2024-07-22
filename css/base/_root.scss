@@ -29,7 +29,18 @@
 
   --darkblue-06: rgba(19, 23, 48, 0.6);
 
+
+  --fg-size: 200px;
+
   @media (max-width: 1500px) {
     --swiper-navigation-sides-offset: 10px;
+  }
+
+  @media (max-width: 1380px) {
+    --fg-size: 120px;
+  }
+
+  @media (max-width: 767px) {
+    --fg-size: 55px;
   }
 }

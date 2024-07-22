@@ -1,19 +1,11 @@
 .contact-us {
-  position: relative;
-  overflow: hidden;
-
-  .figure {
-    top: -270px;
-    right: calc(50% - (855px / 2));
-    opacity: 0.5;
-  }
 }
 
-@media (max-width: 1023px) {
-  .contact-us .figure {
-    top: -270px;
-    right: auto;
-    left: 40px;
-    width: 100%;
-  }
-}
+// @media (max-width: 1023px) {
+//   .contact-us .figure {
+//     top: -270px;
+//     right: auto;
+//     left: 40px;
+//     width: 100%;
+//   }
+// }

@@ -18,13 +18,13 @@
 @import "./blocks/button-menu";
 @import "./blocks/logotype";
 @import "./blocks/item-tag";
-@import "./blocks/figure";
+// @import "./blocks/figure";
 @import "./blocks/preview-card";
 @import "./blocks/form";
 @import "./blocks/swiper-button";
 @import "./blocks/review-card";
 @import "./blocks/partner-card";
-@import "./blocks/transform";
+// @import "./blocks/transform";
 @import "./blocks/breadcrumbs";
 @import "./blocks/big-cite";
 @import "./blocks/articles-list";
@@ -52,6 +52,8 @@
 
 @import "./sections/footer";
 @import "./sections/modal";
+
+@import "./blocks/fg";
 
 // pages
 @import "./pages/page";

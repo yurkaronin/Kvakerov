@@ -1,5 +1,5 @@
 .decorative-map {
-  position: relative;
+  // position: relative;
   padding-bottom: 60px;
   &:after {
     content: '';
@@ -13,13 +13,13 @@
     z-index: 0;
   }
 
-  .figure {
-    opacity: 0.5;
-    right: auto;
-    left: -12%;
-    top: 5px;
-    z-index: 1;
-  }
+  // .figure {
+  //   opacity: 0.5;
+  //   right: auto;
+  //   left: -12%;
+  //   top: 5px;
+  //   z-index: 1;
+  // }
   .wrapper {
     position: relative;
     z-index: 2;
