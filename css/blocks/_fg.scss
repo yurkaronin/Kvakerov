@@ -1,28 +1,27 @@
-
-
 .fg {
   position: relative;
-  padding-top: var(--fg-size);
-  padding-bottom: var(--fg-size);
   // max-width: 100%;
   // overflow-x: hidden;
 }
 
 /* Декоративные блоки для верхней секции */
-.fg-top-white::before,
-.fg-top-gray::before,
-.fg-top-black::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
+.fg-top-white,
+.fg-top-gray,
+.fg-top-black {
+  padding-top: var(--fg-size);
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
 
-  right: -1px;
-  top: -1px;
+    right: -1px;
+    top: -1px;
 
-  // border-top: var(--fg-size) solid;
-  border-left: 101vw solid transparent;
+    // border-top: var(--fg-size) solid;
+    border-left: 101vw solid transparent;
+  }
 }
 
 .fg-top-white::before {
@@ -38,20 +37,23 @@
 }
 
 /* Декоративные блоки для нижней секции */
-.fg-bottom-white::after,
-.fg-bottom-gray::after,
-.fg-bottom-black::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
+.fg-bottom-white,
+.fg-bottom-gray,
+.fg-bottom-black {
+  padding-bottom: var(--fg-size);
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
 
-  left: 0;
-  bottom: -1px;
+    left: 0;
+    bottom: -1px;
 
-  border-top: var(--fg-size) solid transparent;
-  // border-left: 100vw solid;
+    border-top: var(--fg-size) solid transparent;
+    // border-left: 100vw solid;
+  }
 }
 
 .fg-bottom-white::after {

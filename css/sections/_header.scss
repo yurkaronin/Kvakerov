@@ -61,7 +61,9 @@
     display: none;
   }
 
-  @media (max-width: 1380px) {
+  @media (max-width: 1379px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
     &__callback {
       display: none;
     }

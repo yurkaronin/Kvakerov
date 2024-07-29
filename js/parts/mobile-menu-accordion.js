@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  if (window.matchMedia('(max-width: 1380px)').matches) {
+  if (window.matchMedia('(max-width: 1379px)').matches) {
     var navButtons = document.querySelectorAll('.main-nav__button');
 
     navButtons.forEach(function(button) {

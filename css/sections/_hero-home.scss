@@ -1,7 +1,8 @@
 .hero-home {
   // position: relative;
-  // overflow: hidden;
   padding: 0;
+  padding-top: 90px;
+
   &::before {
     content: "";
     display: block;
@@ -13,12 +14,6 @@
     background-color: inherit;
     z-index: 0;
   }
-
-  // .figure {
-  //   top: 60px;
-  //   right: 10%;
-  //   z-index: 0;
-  // }
 
   &__grid {
     display: grid;
@@ -81,102 +76,134 @@
 
   .swiper {
     width: 100%;
-    // height: 100%;
-    min-height: 100vh;
-    padding-top: 110px;
-    padding-bottom: 10px;
+    min-height: 810px;
+    padding-bottom: 40px;
+  }
+
+  &__pagination {
+    position: relative;
+    margin-top: -60px;
+
+    .wrapper {}
   }
 
   .swiper-pagination {
-    bottom: 15%;
-    left: 12%;
+    bottom: auto;
+    left: auto;
+    position: initial;
     width: max-content;
   }
-}
 
-@media (max-width: 1440px) {
-  .hero-home .figure {
-    right: 1%;
-    width: 50%;
-    height: 125%;
-  }
-}
+  // .custom-decorate {
+  //   position: absolute;
+  //   z-index: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   overflow: hidden;
 
-@media (max-width: 1380px) {
-  .hero-home__social {
-    display: none;
-  }
-  .hero-home__label {
-    font-size: 14px;
-  }
-  .hero-home__slide-title {
-    font-size: 60px;
-  }
-  .hero-home__text {
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-  .hero-home .swiper {
-    min-height: 765px;
-  }
-  //   .hero-home .figure {
-  //     top: -90px;
-  //     right: -35%;
-  //     scale: 0.7;
-
+  //   img {
+  //     position: absolute;
+  //     display: block;
+  //     top: 110px;
+  //     right: 10px;
+  //     width: 854px;
   //   }
-}
+  // }
 
-@media (max-width: 1024px) {
-  .hero-home .swiper {
-    min-height: 640px;
-    padding-top: 90px;
-    padding-bottom: 40px;
+  @media (max-width: 1379px) {
+
+    &__social {
+      display: none;
+    }
+
+    &__label {
+      font-size: 14px;
+    }
+
+    &__slide-title {
+      font-size: 60px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
   }
 
-  .hero-home__grid {
-    grid-template-columns: 7fr 5fr;
-  }
-}
+  @media (max-width: 1023px) {
+    .swiper {
+      // min-height: 640px;
+      // padding-top: 20px;
+      // padding-bottom: 40px;
+      min-height: 715px;
+    }
 
-@media (max-width: 767px) {
-  .hero-home__grid {
-    grid-template-columns: 1fr;
-  }
-  .hero-home__label {
-    font-size: 12px;
-  }
+    &__grid {
+      grid-template-columns: 7fr 5fr;
+    }
 
-  .hero-home .swiper {
-    min-height: 570px;
-    padding-top: 90px;
-    padding-bottom: 40px;
-  }
-  .hero-home__slide-title {
-    font-size: 42px;
-  }
-  .hero-home__text {
-    margin-bottom: 30px;
-    font-size: 16px;
-    max-width: 220px;
-  }
-  .hero-home__slide-image {
-    position: absolute;
-    top: 30%;
-    right: -10px;
-    height: 364px;
-    width: auto;
-    img {
-      height: 100%;
-      width: auto;
-      object-fit: cover;
-      max-height: initial;
-      max-width: initial;
+    // .custom-decorate img {
+    //   width: 732px;
+    // }
+    &__pagination {
+      margin-top: -135px;
     }
   }
-  // .hero-home .figure {
-  //   right: auto;
-  //   width: 95%;
-  //   height: 145%;
-  // }
+
+  @media (max-width: 767px) {
+    padding-top: calc(70px + 50px);
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__label {
+      font-size: 12px;
+    }
+
+    .swiper {
+      min-height: 490px;
+      // padding-top: 90px;
+      // padding-bottom: 40px;
+    }
+
+    &__slide-title {
+      font-size: 42px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      font-size: 16px;
+      max-width: 220px;
+    }
+
+    &__slide-image {
+      position: absolute;
+      top: 30%;
+      right: -10px;
+      height: 364px;
+      width: auto;
+
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        max-height: initial;
+        max-width: initial;
+      }
+    }
+
+    // .custom-decorate img {
+    //   width: 447px;
+    //   top: 12%;
+    //   right: -90px
+    // }
+
+    &__pagination {
+      margin-top: -10px;
+    }
+
+
+
+  }
 }

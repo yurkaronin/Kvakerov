@@ -31,11 +31,14 @@
 @import "./blocks/catalog-filter";
 @import "./blocks/swiper-button-group";
 @import "./blocks/media-file";
+@import "./blocks/custom-decorate";
+
+@import "./sections/section";
+@import "./blocks/fg";
 
 // sections
 @import "./sections/header";
 
-@import "./sections/section";
 @import "./sections/inner-top";
 @import "./sections/hero-home";
 @import "./sections/items-tags";
@@ -53,7 +56,7 @@
 @import "./sections/footer";
 @import "./sections/modal";
 
-@import "./blocks/fg";
+
 
 // pages
 @import "./pages/page";
@@ -67,7 +70,7 @@
 // effects
 @import "./effects/click";
 
-// @media (max-width: 1380px)
+// @media (max-width: 1379px)
 // @media (max-width: 1023px)
 // @media (max-width: 550px)
 

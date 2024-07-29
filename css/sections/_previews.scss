@@ -1,12 +1,10 @@
 .previews {
-  overflow: hidden;
+  position: relative;
 
-  // .figure {
-  //   top: -170px;
-  // }
   .swiper {
     padding-bottom: 50px;
   }
+
   &__list {
     position: relative;
     z-index: 2;
@@ -18,12 +16,34 @@
   .swiper-slide {
     height: auto;
   }
+
   .section__footer {
     margin-top: 24px;
-    .button {
-      max-width: 100%;
+  }
+
+  &.fg::before {
+    z-index: 2;
+  }
+
+  .custom-decorate {
+    top: -135px;
+
+
+    img {
+      right: 20%;
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 1379px) {
+    .custom-decorate {
+      top: -135px;
+
+
+      img {
+        right: -200px;
+        width: initial;
+      }
     }
   }
 }
-
-// .previews-slider {}
