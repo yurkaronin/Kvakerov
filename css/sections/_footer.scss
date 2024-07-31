@@ -1,7 +1,10 @@
 .footer {
-  position: initial;
-  padding-bottom: 16px;
+  position: relative;
+  // padding-bottom: 16px;
   padding-top: 16px;
+  &::before {
+    display: none;
+  }
 
   &__grid {
     display: grid;
@@ -56,8 +59,7 @@
   &__social {
     margin-bottom: 22px;
   }
-  &__navigation {
-  }
+
   &__nav-list {
     a {
       font-weight: 500;
@@ -93,8 +95,6 @@
       }
     }
   }
-  &__form {
-  }
 
   .social__link {
     color: inherit;
@@ -111,6 +111,14 @@
 }
 
 @media (max-width: 767px) {
+  .footer {
+    position: relative;
+    padding-top: calc(var(--fg-size) + 32px);
+    &::before {
+      display: block;
+    }
+  }
+
   .footer__grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
@@ -135,7 +143,7 @@
     grid-template-columns: auto 1fr;
   }
   .footer__copyright {
-    margin-bottom: 36px;
+    margin-bottom: 0;
   }
   .footer__contacts br {
     display: none;

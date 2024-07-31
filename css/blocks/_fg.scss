@@ -41,6 +41,7 @@
 .fg-bottom-gray,
 .fg-bottom-black {
   padding-bottom: var(--fg-size);
+
   &::after {
     content: '';
     display: block;

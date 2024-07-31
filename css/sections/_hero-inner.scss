@@ -1,0 +1,10 @@
+.hero-inner {
+  padding-top: 124px;
+
+  @media (max-width: 1379px) {
+    padding-top: 64px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 32px;
+  }
+}

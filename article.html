@@ -462,10 +462,13 @@
 
           <div class="article-full__content-grid">
             <div class="article-full__content-item text-big">
-              <b>Российские обжарщики Gemma Coffee намерены в ближайшее время войти в топовую «элиту» отечественных производителей
+              <b>Российские обжарщики Gemma Coffee намерены в ближайшее время войти в топовую «элиту» отечественных
+                производителей
                 и поставщиков кофе. Масштабы производства действительно могут впечатлить, учитывая
-                то, что они планируют расширять свой бизнес, можно сказать, у них есть все шансы занять достойное место на Российском рынке
-                в кофейной индустрии. Что ж, пожелаем удачи Gemma Coffee, а наша компания «Смарт Грэйд» будет и дальше помогать развиваться производителям благодаря фотосепараторам «Сапсан» собственного производства.</b>
+                то, что они планируют расширять свой бизнес, можно сказать, у них есть все шансы занять достойное место
+                на Российском рынке
+                в кофейной индустрии. Что ж, пожелаем удачи Gemma Coffee, а наша компания «Смарт Грэйд» будет и дальше
+                помогать развиваться производителям благодаря фотосепараторам «Сапсан» собственного производства.</b>
             </div>
 
             <div class="article-full__content-item">
@@ -484,13 +487,14 @@
     </article>
 
   </main>
+
   <!-- Подвал  -->
-  <footer class="footer section section--black footer">
+  <footer class="footer section section--black">
     <div class="wrapper">
       <div class="section__body">
         <div class="footer__grid">
 
-          <div class="footer__column">
+          <div class="footer__column footer__column--first">
             <!-- Логотип  -->
             <div class="footer__logotype">
               <svg width="167" height="42" viewBox="0 0 167 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -521,11 +525,11 @@
               <h2 class="footer__title">Наши контакты</h2>
               <ul class="list-reset">
                 <li>
-                  <address><b>Адрес:</b> Россия,<br>
+                  <address><b>Адрес: </b> Россия,<br>
                     г. Воронеж, ул. Лебедева 10</address>
                 </li>
-                <li><b>Отдел продаж:</b><a href="tel:+7 (800) 350-83-41">+7 (800) 350-83-41</a></li>
-                <li><b>Email:</b><a href="mailto:info@fsapsan.ru">info@fsapsan.ru</a></li>
+                <li><b>Отдел продаж: </b><a href="tel:+78003508341">+7 (800) 350-83-41</a></li>
+                <li><b>Email: </b><a href="mailto:info@fsapsan.ru">info@fsapsan.ru</a></li>
               </ul>
             </div>
             <!-- Социальные сети  -->
@@ -603,37 +607,40 @@
               </ul>
             </div>
           </div>
-          <div class="footer__column">
+
+          <div class="footer__column footer__column--mod">
             <div class="footer__form">
               <div class="form form--mod">
                 <div class="form__title">Форма обратной связи</div>
-                <form action="#">
-                  <div class="form__grid form__grid--mod">
-                    <div class="form__item">
-                      <div class="form__element">
-                        <input type="text" name="user-name" id="user-name" placeholder="Укажите имя" required>
+                <div class="form">
+                  <form action="#">
+                    <div class="form__grid form__grid--mod">
+                      <div class="form__item">
+                        <div class="form__element">
+                          <input type="text" name="user-name" placeholder="Укажите имя" required>
+                        </div>
+
                       </div>
 
-                    </div>
+                      <div class="form__item">
+                        <div class="form__element">
+                          <input type="tel" name="user-phone" placeholder="Введите телефон" required>
+                        </div>
 
-                    <div class="form__item">
-                      <div class="form__element">
-                        <input type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required>
                       </div>
 
-                    </div>
-
-                    <div class="form__grid-item form__footer">
-                      <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
-                      <div class="form__agree">
-                        <input type="checkbox" name="user-agree" id="user-agree" required checked>
-                        <label for="user-agree">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
-                          конфиденциальности</label>
+                      <div class="form__grid-item form__footer">
+                        <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
+                        <div class="form__agree">
+                          <input type="checkbox" name="user-agree" id="user-agree-2" required checked>
+                          <label for="user-agree-2">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
+                            конфиденциальности</label>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -657,40 +664,39 @@
   <section class="modal" id="modal-call-back">
     <div class="wrapper">
 
-      <div class="modal__header">
-        <h2 class="modal__title title">Форма обратной связи</h2>
-        <p class="modal__text">Оставьте Ваши контактные данные и мы перезвоним в ближайшее время</p>
-      </div>
       <!-- основной блок контента -->
       <div class="modal__body">
+        <h2 class="title">Форма обратной связи</h2>
         <div class="modal__form">
-          <form action="#">
-            <div class="form__grid form__grid--mod">
-              <div class="form__item">
-                <div class="form__element">
-                  <input type="text" name="user-name" id="user-name" placeholder="Укажите имя" required>
+          <div class="form">
+            <form action="#">
+              <div class="form__grid form__grid--mod">
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="text" name="user-name" placeholder="Укажите имя" required>
+                  </div>
+
                 </div>
 
-              </div>
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="tel" name="user-phone" placeholder="Введите телефон" required>
+                  </div>
 
-              <div class="form__item">
-                <div class="form__element">
-                  <input type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required>
                 </div>
 
-              </div>
-
-              <div class="form__grid-item form__footer">
-                <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
-                <div class="form__agree">
-                  <input type="checkbox" name="user-agree" id="user-agree" required checked>
-                  <label for="user-agree">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
-                    конфиденциальности</label>
+                <div class="form__grid-item form__footer">
+                  <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
+                  <div class="form__agree">
+                    <input type="checkbox" name="user-agree" id="user-agree-3" required checked>
+                    <label for="user-agree-3">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
+                      конфиденциальности</label>
+                  </div>
                 </div>
               </div>
-            </div>
 
-          </form>
+            </form>
+          </div>
         </div>
 
         <!-- Кнопка закрытия окна  -->
@@ -711,11 +717,11 @@
     </div>
   </section>
 
-
-
-
-
+  <!-- Скрипты  -->
   <script src="./libs/fslightbox.min.js"></script>
+  <script src="./libs/SmoothScroll.min.js"></script>
+
+
 
   <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./js/parts/swiper.js"></script>
@@ -726,6 +732,7 @@
   <script src="./js/parts/mobile-menu-accordion.js"></script>
   <script src="./js/parts/geo-mark-show-details.js"></script>
   <script src="./js/parts/modals.js"></script>
+  <script src="./js/parts/just-main-padding.js"></script>
 
   <script src="./js/main.js"></script>
 </body>

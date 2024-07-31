@@ -1,6 +1,8 @@
 .photo-slider {
   position: relative;
   overflow: hidden;
+  padding-top: calc(90px - 32px);
+  padding-bottom: calc(90px - 32px);
 
   .swiper {
     overflow: initial;
