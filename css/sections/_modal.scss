@@ -14,7 +14,7 @@
   pointer-events: none;
   background-color: var(--darkblue-06);
 
-  .modal__close {
+  &__close {
     position: absolute;
     top: 6px;
     right: 10px;
@@ -53,6 +53,14 @@
     border-radius: 30px 0 0 0;
   }
 
+  .title {
+    font-size: 28px;
+  }
+
+  .title+* {
+    margin-top: 0;
+  }
+
   .form__element {
     border-bottom: 1px solid var(--black-text);
   }
@@ -88,5 +96,36 @@
 
   .form__item::after {
     background-color: var(--darkblue-02);
+  }
+
+  @media (max-width: 767px) {
+    .title {
+      font-size: 22px;
+    }
+
+    .form__footer {
+      margin-top: 0;
+    }
+
+    .form__grid {
+      gap: 32px;
+    }
+
+    .form__item input,
+    .form__item textarea {
+      padding: 12px 0;
+      height: 45px;
+    }
+
+    .form__button {
+      margin-bottom: 0;
+    }
+
+    .form__footer {
+      gap: 16px;
+    }
+    .form__agree {
+      gap: 12px;
+    }
   }
 }

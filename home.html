@@ -45,7 +45,7 @@
 
           <nav class="main-nav">
             <div class="main-nav__header">
-              <h3 class="main-nav__title">Меню</h3>
+              <b class="main-nav__title">Меню</b>
               <button class="main-nav__close js-menu-btn" title="Закрыть меню">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -65,12 +65,12 @@
                   <svg>
                     <use href="./svg/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                  <button class="main-nav__button" type="button" title="показать подкатегории">
+                  <span class="main-nav__button" title="показать подкатегории">
                     <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M26 2L14 14L2 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                     </svg>
 
-                  </button>
+                  </span>
                 </a>
                 <ul class="main-nav__sub-list">
                   <li class="main-nav__sub-item">
@@ -115,7 +115,7 @@
           <div class="header__mobile-contacts">
             <b>Отдел продаж: </b>
             <a class="phone" href="tel:78003508341">7 (800) 350-83-41</a>
-            <a class="link" href="#">Заказать звонок</a>
+            <a class="link" href="#" data-target="modal-call-back">Заказать звонок</a>
           </div>
 
 
@@ -223,11 +223,12 @@
 
     <!-- Первый экран главной страницы  -->
     <section class="hero-home section section--black fg fg-bottom-white">
+
+      <h2 class="visually-hidden">Наши лучшие предложения</h2>
+
       <div class="custom-decorate">
         <img src="./svg/hero-home-bg.svg" alt="#">
       </div>
-
-
 
       <!-- Слайдер в первом экране  -->
       <div class="hero-home__slider">
@@ -247,8 +248,8 @@
                     <div class="hero-home__grid-item hero-home__grid-item-left">
                       <span class="hero-home__label" data-swiper-parallax="-200">Чистота продукта до
                         <b>99,99%</b></span>
-                      <h2 class="hero-home__slide-title" data-swiper-parallax="-400">
-                        Колорсортер Сапсан</h2>
+                      <h3 class="hero-home__slide-title" data-swiper-parallax="-400">
+                        Колорсортер Сапсан</h3>
                       <p class="hero-home__text" data-swiper-parallax="-600">Протестируй колосортер перед покупкой
                         <b>бесплатно</b>
                       </p>
@@ -280,8 +281,8 @@
                     <div class="hero-home__grid-item hero-home__grid-item-left">
                       <span class="hero-home__label" data-swiper-parallax="-200">Чистота продукта до
                         <b>99,99%</b></span>
-                      <h2 class="hero-home__slide-title" data-swiper-parallax="-400">
-                        Колорсортер Сапсан</h2>
+                      <h3 class="hero-home__slide-title" data-swiper-parallax="-400">
+                        Колорсортер Сапсан</h3>
                       <p class="hero-home__text" data-swiper-parallax="-600">Протестируй колосортер перед покупкой
                         <b>бесплатно</b>
                       </p>
@@ -383,7 +384,7 @@
                   <img src="./img/item-tag/1.jpg" alt="Фото продукта" class="item-tag__image" loading="lazy">
                 </div>
               </a>
-              <p class="item-tag__text visually-hidden">Очистка от квакеров, пережаренных зерен, палочек
+              <p class="visually-hidden">Очистка от квакеров, пережаренных зерен, палочек
                 и других засорителей</p>
 
 
@@ -882,7 +883,7 @@
               <div class="form__grid">
                 <div class="form__item">
                   <div class="form__element">
-                    <input type="text" name="user-name" id="user-name" placeholder="Укажите имя" required>
+                    <input type="text" name="user-name"  placeholder="Укажите имя" required>
                   </div>
 
                 </div>
@@ -893,7 +894,7 @@
                 </div>
                 <div class="form__item">
                   <div class="form__element">
-                    <input type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required>
+                    <input type="tel" name="user-phone"  placeholder="Введите телефон" required>
                   </div>
 
                 </div>
@@ -905,8 +906,8 @@
                 <div class="form__grid-item form__footer">
                   <button class="form__button button" type="submit"><span>Оставить заявку</span></button>
                   <div class="form__agree">
-                    <input type="checkbox" name="user-agree" id="user-agree" required checked>
-                    <label for="user-agree">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
+                    <input type="checkbox" name="user-agree" id="user-agree-1" required checked>
+                    <label for="user-agree-1">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
                       конфиденциальности</label>
                   </div>
                 </div>
@@ -923,7 +924,7 @@
     <section class="section section--white advantages">
       <div class="wrapper ">
         <div class="section__header">
-          <h2 class="title">Почему<br>выбирают Сапсан?</h2>
+          <h2 class="title">Почему <br>выбирают Сапсан?</h2>
         </div>
         <div class="section__body">
           <ul class="advantages__list list-reset">
@@ -1234,7 +1235,7 @@
     <section class="partners section section--white">
       <div class="wrapper">
         <div class="section__header">
-          <h2 class="title">Наши<br>партнёры</h2>
+          <h2 class="title">Наши <br>партнёры</h2>
         </div>
 
         <div class="section__body">
@@ -1450,6 +1451,7 @@
     </section>
 
   </main>
+
   <!-- Подвал  -->
   <footer class="footer section section--black">
     <div class="wrapper">
@@ -1490,7 +1492,7 @@
                   <address><b>Адрес: </b> Россия,<br>
                     г. Воронеж, ул. Лебедева 10</address>
                 </li>
-                <li><b>Отдел продаж: </b><a href="tel:+7 (800) 350-83-41">+7 (800) 350-83-41</a></li>
+                <li><b>Отдел продаж: </b><a href="tel:+78003508341">+7 (800) 350-83-41</a></li>
                 <li><b>Email: </b><a href="mailto:info@fsapsan.ru">info@fsapsan.ru</a></li>
               </ul>
             </div>
@@ -1574,33 +1576,35 @@
             <div class="footer__form">
               <div class="form form--mod">
                 <div class="form__title">Форма обратной связи</div>
-                <form action="#">
-                  <div class="form__grid form__grid--mod">
-                    <div class="form__item">
-                      <div class="form__element">
-                        <input type="text" name="user-name" id="user-name" placeholder="Укажите имя" required>
+                <div class="form">
+                  <form action="#">
+                    <div class="form__grid form__grid--mod">
+                      <div class="form__item">
+                        <div class="form__element">
+                          <input type="text" name="user-name"  placeholder="Укажите имя" required>
+                        </div>
+
                       </div>
 
-                    </div>
+                      <div class="form__item">
+                        <div class="form__element">
+                          <input type="tel" name="user-phone"  placeholder="Введите телефон" required>
+                        </div>
 
-                    <div class="form__item">
-                      <div class="form__element">
-                        <input type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required>
                       </div>
 
-                    </div>
-
-                    <div class="form__grid-item form__footer">
-                      <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
-                      <div class="form__agree">
-                        <input type="checkbox" name="user-agree" id="user-agree" required checked>
-                        <label for="user-agree">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
-                          конфиденциальности</label>
+                      <div class="form__grid-item form__footer">
+                        <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
+                        <div class="form__agree">
+                          <input type="checkbox" name="user-agree" id="user-agree-2" required checked>
+                          <label for="user-agree-2">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
+                            конфиденциальности</label>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -1624,40 +1628,39 @@
   <section class="modal" id="modal-call-back">
     <div class="wrapper">
 
-      <!-- <div class="modal__header">
-        <h2 class="modal__title title">Форма обратной связи</h2>
-        <p class="modal__text">Оставьте Ваши контактные данные и мы перезвоним в ближайшее время</p>
-      </div> -->
       <!-- основной блок контента -->
       <div class="modal__body">
+        <h2 class="title">Форма обратной связи</h2>
         <div class="modal__form">
-          <form action="#">
-            <div class="form__grid form__grid--mod">
-              <div class="form__item">
-                <div class="form__element">
-                  <input type="text" name="user-name" id="user-name" placeholder="Укажите имя" required>
+          <div class="form">
+            <form action="#">
+              <div class="form__grid form__grid--mod">
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="text" name="user-name"  placeholder="Укажите имя" required>
+                  </div>
+
                 </div>
 
-              </div>
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="tel" name="user-phone"  placeholder="Введите телефон" required>
+                  </div>
 
-              <div class="form__item">
-                <div class="form__element">
-                  <input type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон" required>
                 </div>
 
-              </div>
-
-              <div class="form__grid-item form__footer">
-                <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
-                <div class="form__agree">
-                  <input type="checkbox" name="user-agree" id="user-agree" required checked>
-                  <label for="user-agree">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
-                    конфиденциальности</label>
+                <div class="form__grid-item form__footer">
+                  <button class="form__button button" type="submit"><span>Перезвоните мне</span></button>
+                  <div class="form__agree">
+                    <input type="checkbox" name="user-agree" id="user-agree-3" required checked>
+                    <label for="user-agree-3">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
+                      конфиденциальности</label>
+                  </div>
                 </div>
               </div>
-            </div>
 
-          </form>
+            </form>
+          </div>
         </div>
 
         <!-- Кнопка закрытия окна  -->
@@ -1678,10 +1681,7 @@
     </div>
   </section>
 
-
-
-
-
+  <!-- Скрипты  -->
   <script src="./libs/fslightbox.min.js"></script>
   <script src="./libs/SmoothScroll.min.js"></script>
 

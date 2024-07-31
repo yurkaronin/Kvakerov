@@ -2,7 +2,7 @@
   position: relative;
 
   .swiper {
-    padding-bottom: 50px;
+    padding-bottom: 8px;
   }
 
   &__list {
@@ -42,6 +42,18 @@
 
       img {
         right: -200px;
+        width: initial;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .custom-decorate {
+      top: -160px;
+
+
+      img {
+        right: -50px;
         width: initial;
       }
     }

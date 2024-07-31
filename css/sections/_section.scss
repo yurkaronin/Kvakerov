@@ -1,7 +1,9 @@
 .section {
   position: relative;
-  padding-top: 64px;
-  padding-bottom: 130px;
+  // padding-top: 64px;
+  // padding-bottom: 130px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   &__header {
     margin-bottom: 40px;
@@ -40,8 +42,8 @@
 
 @media (max-width: 767px) {
   .section {
-    padding-top: 55px;
-    padding-bottom: 75px;
+    padding-top: 16px;
+    padding-bottom: 32px;
   }
 
   .section__footer {
