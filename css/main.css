@@ -1991,7 +1991,7 @@ input[type=radio].visually-hidden {
   z-index: 10;
   width: 100%;
   background-color: transparent;
-  transition: background-color 0.3s, color 0.3s, padding 0.3s;
+  transition: all 0.3s;
   padding-top: 30px;
   padding-bottom: 30px;
   color: var(--white);
@@ -2828,26 +2828,23 @@ input[type=radio].visually-hidden {
   }
 }
 
-.hero-inner {
-  padding-top: 124px;
+.hero-inner__transfotm {
+  position: relative;
+  margin-top: -120px;
 }
 @media (max-width: 1379px) {
-  .hero-inner {
-    padding-top: 64px;
+  .hero-inner__transfotm {
+    margin-top: -60px;
   }
 }
 @media (max-width: 767px) {
-  .hero-inner {
-    padding-top: 32px;
+  .hero-inner__transfotm {
+    margin-top: initial;
   }
 }
 
 .footer {
   position: relative;
-  padding-top: 16px;
-}
-.footer::before {
-  display: none;
 }
 .footer__grid {
   display: grid;
@@ -3092,28 +3089,17 @@ input[type=radio].visually-hidden {
   }
 }
 
-.page-inner .main::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 330px;
-  background-image: url(../svg/inner-page-top.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
+.page-home .footer {
+  position: relative;
+  padding-top: 16px;
 }
-.page-inner .main::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
+.page-home .footer::before {
+  display: none;
+}
+
+.page-inner .header {
   background-color: var(--bg-2);
+  color: var(--white);
 }
 @media (max-width: 1379px) {
   .page-inner .main::before {

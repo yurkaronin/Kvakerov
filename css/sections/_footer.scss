@@ -1,10 +1,6 @@
 .footer {
   position: relative;
   // padding-bottom: 16px;
-  padding-top: 16px;
-  &::before {
-    display: none;
-  }
 
   &__grid {
     display: grid;

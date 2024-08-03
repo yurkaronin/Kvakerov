@@ -1,10 +1,18 @@
 .hero-inner {
-  padding-top: 124px;
+  &__transfotm {
+    position: relative;
+    margin-top: -120px;
+  }
 
   @media (max-width: 1379px) {
-    padding-top: 64px;
+    &__transfotm {
+      margin-top: -60px;
+    }
   }
+
   @media (max-width: 767px) {
-    padding-top: 32px;
+    &__transfotm {
+      margin-top: initial;
+    }
   }
 }
