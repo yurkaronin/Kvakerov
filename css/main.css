@@ -1874,6 +1874,38 @@ input[type=radio].visually-hidden {
   color: var(--grey-text);
 }
 
+.content {
+  color: var(--black-text);
+  font-size: 16px;
+}
+.content span {
+  color: var(--hover-menu);
+}
+.content__grid {
+  display: grid;
+  gap: 0 32px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content li {
+  margin-bottom: 24px;
+}
+@media (max-width: 1023px) {
+  .content {
+    font-size: inherit;
+  }
+  .content__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content li {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .content__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .section {
   position: relative;
   padding-top: 32px;

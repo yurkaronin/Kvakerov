@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты</title>
+  <title>Список страниц проекта</title>
 
-  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="page page--inner">
+<body class="page-inner">
 
   <!-- шапка  -->
   <header class="header">
@@ -45,7 +44,7 @@
 
           <nav class="main-nav">
             <div class="main-nav__header">
-              <h3 class="main-nav__title">Меню</h3>
+              <b class="main-nav__title">Меню</b>
               <button class="main-nav__close js-menu-btn" title="Закрыть меню">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -65,12 +64,12 @@
                   <svg>
                     <use href="./svg/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                  <button class="main-nav__button" type="button" title="показать подкатегории">
+                  <span class="main-nav__button" title="показать подкатегории">
                     <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M26 2L14 14L2 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                     </svg>
 
-                  </button>
+                  </span>
                 </a>
                 <ul class="main-nav__sub-list">
                   <li class="main-nav__sub-item">
@@ -115,7 +114,7 @@
           <div class="header__mobile-contacts">
             <b>Отдел продаж: </b>
             <a class="phone" href="tel:78003508341">7 (800) 350-83-41</a>
-            <a class="link" href="#">Заказать звонок</a>
+            <a class="link" href="#" data-target="modal-call-back">Заказать звонок</a>
           </div>
 
 
@@ -217,83 +216,71 @@
     </div>
   </header>
 
-  <!-- Основной контент  -->
   <main class="main">
 
-    <!-- Первый блок контента  -->
-    <section class="inner-top section section--gray transform">
-      <div class="wrapper transform__content">
+    <section class="hero-inner section fg fg-top-black">
+      <div class="wrapper hero-inner__transfotm">
 
-        <div class="section__header">
-          <div class="breadcrumbs">
-            <ul class="list-reset">
-              <li>
-                <a href="#">Главная</a>
-              </li>
-              <li>
-                <a>Контакты</a>
-              </li>
-            </ul>
-          </div>
-
-          <h1 class="title">Наши<br>
-            контакты</h1>
+        <div class="breadcrumbs">
+          <ul class="list-reset">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a>Реквизиты</a>
+            </li>
+          </ul>
         </div>
+        <h1 class="title">Реквизиты</h1>
 
-        <div class="section__body">
+        <div class="content">
+          <div class="content__grid">
 
-          <div class="contacts-grid">
-
-            <ul class="contacts-simple list-reset">
-              <li>Адрес:
-                <b>Россия, г. Воронеж,
-                  ул. Лебедева 10</b>
-              </li>
-              <li>Отдел продаж: 
-                <b>+7 (800) 350-09-52</b>
-              </li>
-              <li>Email: 
-                <b>info@fsapsan.ru</b>
-              </li>
-              <li>Техническое
-                сопровождение
-                <b>+7 (555) 456-63-85</b>
-              </li>
-            </ul>
-
-            <div class="contacts-card">
-              <div class="contacts-card__grid">
-                <div class="contacts-card__col">
-                  <h3 class="contacts-card__name">Валерия Сигаева</h3>
-                  <p class="contacts-card__direction">Ведущий менеджер
-                    по продажам
-                    оборудования
-                    на кофе и снэки</p>
-                </div>
-                <div class="contacts-card__col">
-                  <ul class="list-reset contacts-card__list">
-                    <li><b>Email:</b>
-                      svv@fsapsan.ru</li>
-
-                    <li><b>Телефон:</b>
-                      +7 903 851 57 38</li>
-                  </ul>
-                </div>
-                <div class="contacts-card__photo">
-                  <img src="./img/team/1.png" alt="">
-                </div>
-
-              </div>
-
-
-
-
-
-
+            <div class="content__column">
+              <ul class="list-reset">
+                <li><span>Генеральный директор:</span><br>
+                  Агеев Алексей Анатольевич</li>
+                <li><span>Главный бухгалтер:</span><br>
+                  Селезнева Юлия Николаевна</li>
+              </ul>
             </div>
+
+            <div class="content__column">
+              <ul class="list-reset">
+                <li><span>Юридический и почтовый адрес:</span><br>
+                  394014, ВОРОНЕЖСКАЯ ОБЛАСТЬ,
+                  ГОРОД ВОРОНЕЖ, УЛИЦА ЛЕБЕДЕВА, ДОМ 10, ОФИС 50/1</li>
+                <li>
+                  <span>Адрес фактический и адрес склада:</span><br>
+                    394014, ВОРОНЕЖСКАЯ ОБЛАСТЬ,
+                    ГОРОД ВОРОНЕЖ, УЛИЦА ЛЕБЕДЕВА, ДОМ 10, ОФИС 50/1
+                </li>
+                <li>
+                  <span>Телефон:</span> +7 (499) 642-39-80
+                </li>
+              </ul>
+            </div>
+
+            <div class="content__column">
+              <ul class="list-reset">
+                <li>
+                  <span>ИНН</span> 3664225470 <span>КПП</span> 366301001О <span>КПО</span> 06185377
+                <span>ОКВЭД</span> 28.30.8 Производство прочих сельскохозяйственных машин и оборудования
+                <span>ОГРН</span> 1163668124950
+                </li>
+                <li>
+                  <span>р/счет</span> 40702810313000018690 <span>БИК</span> 042007681
+                <span>к/счет</span> 30101810600000000681
+                </li>
+                <li>
+                  <span>Банк:</span> ЦЕНТРАЛЬНО-ЧЕРНОЗЕМНЫЙ БАНК
+                ПАО СБЕРБАНКА РОССИИ Г. ВОРОНЕЖ
+                </li>
+              </ul>
+            </div>
+
+
           </div>
-
-
         </div>
 
       </div>
@@ -302,7 +289,7 @@
   </main>
 
   <!-- Подвал  -->
-  <footer class="footer section section--black">
+  <footer class="footer section section--black fg fg-top-gray">
     <div class="wrapper">
       <div class="section__body">
         <div class="footer__grid">
