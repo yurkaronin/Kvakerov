@@ -1,0 +1,142 @@
+.contacts {
+
+  &__grid {
+    display: grid;
+    gap: 16px 30px;
+    grid-template-columns: 5fr 7fr;
+    align-items: flex-start;
+
+    b {
+      display: block;
+    }
+  }
+
+  &__simple-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--grey-text);
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 700;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__grid {
+      gap: 84px;
+      grid-template-columns: 1fr;
+    }
+
+    &__simple-list {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__grid {
+      gap: 40px;
+      grid-template-columns: 1fr;
+    }
+
+    &__simple-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+
+}
+
+
+
+
+
+.contacts-card {
+  background-color: #fff;
+  padding: 45px 55px 55px;
+  border-radius: 30px 0 0 0;
+  position: relative;
+  padding-right: calc(205px + 10px);
+
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__name {
+    display: block;
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black-text);
+  }
+
+  &__direction {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--grey-text);
+    max-width: 205px;
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--black-text);
+
+    li {
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    span {
+      font-weight: 400;
+    }
+
+    a {
+      font-weight: 700;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+      right: 0;
+      bottom: 0;
+    img {
+      width: 205px;
+      height: 262px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 25px 30px;
+
+    padding-right: 145px;
+
+    &__grid {
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    &__photo {
+
+      img {
+        width: 205px;
+        max-width: 205px;
+        height: 262px;
+        margin-left: -50px;
+      }
+    }
+  }
+}

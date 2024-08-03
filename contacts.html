@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="page page--inner">
+<body class="page-inner">
 
   <!-- шапка  -->
   <header class="header">
@@ -221,80 +221,74 @@
   <main class="main">
 
     <!-- Первый блок контента  -->
-    <section class="inner-top section section--gray transform">
-      <div class="wrapper transform__content">
+    <section class="hero-inner section section--gray fg fg-top-black">
+      <div class="wrapper hero-inner__transfotm">
 
-        <div class="section__header">
-          <div class="breadcrumbs">
-            <ul class="list-reset">
-              <li>
-                <a href="#">Главная</a>
-              </li>
-              <li>
-                <a>Контакты</a>
-              </li>
-            </ul>
-          </div>
-
-          <h1 class="title">Наши<br>
-            контакты</h1>
+        <div class="breadcrumbs">
+          <ul class="list-reset">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a>Контакты</a>
+            </li>
+          </ul>
         </div>
+        <h1 class="title">Наши<br>
+          контакты</h1>
 
-        <div class="section__body">
+        <div class="contacts">
+          <div class="contacts__grid">
 
-          <div class="contacts-grid">
+            <div class="contacts__grid-column">
+              <ul class="contacts__simple-list list-reset">
+                <li><span>Адрес:</span><br>
+                  <address>Россия, г. Воронеж, ул. Лебедева 10</address>
+                </li>
+                <li><span>Отдел продаж:</span><br>
+                  <a href="tel:+78003500952">+7 (800) 350-09-52</a>
+                </li>
+                <li><span>Email:</span><br>
+                  <a href="mailto:info@fsapsan.ru">info@fsapsan.ru</a>
+                </li>
+                <li><span>Техническое сопровождение:</span><br>
+                  <a href="tel:+75554566385">+7 (555) 456-63-85</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__grid-column">
+              <div class="contacts-card">
+                <div class="contacts-card__grid">
+                  <div class="contacts-card__col">
+                    <h3 class="contacts-card__name">Валерия Сигаева</h3>
+                    <p class="contacts-card__direction">Ведущий менеджер
+                      по продажам
+                      оборудования
+                      на кофе и снэки</p>
+                  </div>
+                  <div class="contacts-card__col">
+                    <ul class="list-reset contacts-card__list">
+                      <li><span>Email:</span><br>
+                        <a href="mailto:svv@fsapsan.ru">svv@fsapsan.ru</a></li>
 
-            <ul class="contacts-simple list-reset">
-              <li>Адрес:
-                <b>Россия, г. Воронеж,
-                  ул. Лебедева 10</b>
-              </li>
-              <li>Отдел продаж: 
-                <b>+7 (800) 350-09-52</b>
-              </li>
-              <li>Email: 
-                <b>info@fsapsan.ru</b>
-              </li>
-              <li>Техническое
-                сопровождение
-                <b>+7 (555) 456-63-85</b>
-              </li>
-            </ul>
+                      <li><span>Телефон:</span><br>
+                        <a href="tel:+79038515738">+7 903 851 57 38</a></li>
+                    </ul>
+                  </div>
+                  <div class="contacts-card__photo">
+                    <img src="./img/team/1.png" alt="">
+                  </div>
 
-            <div class="contacts-card">
-              <div class="contacts-card__grid">
-                <div class="contacts-card__col">
-                  <h3 class="contacts-card__name">Валерия Сигаева</h3>
-                  <p class="contacts-card__direction">Ведущий менеджер
-                    по продажам
-                    оборудования
-                    на кофе и снэки</p>
-                </div>
-                <div class="contacts-card__col">
-                  <ul class="list-reset contacts-card__list">
-                    <li><b>Email:</b>
-                      svv@fsapsan.ru</li>
-
-                    <li><b>Телефон:</b>
-                      +7 903 851 57 38</li>
-                  </ul>
-                </div>
-                <div class="contacts-card__photo">
-                  <img src="./img/team/1.png" alt="">
                 </div>
 
               </div>
-
-
-
-
-
-
             </div>
+
           </div>
-
-
         </div>
+
+
+
 
       </div>
     </section>
@@ -302,7 +296,7 @@
   </main>
 
   <!-- Подвал  -->
-  <footer class="footer section section--black">
+  <footer class="footer section section--black fg fg-top-gray">
     <div class="wrapper">
       <div class="section__body">
         <div class="footer__grid">
