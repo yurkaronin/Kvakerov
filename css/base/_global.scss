@@ -25,13 +25,23 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: var(--grey-text);
-
 }
 
 img {
   height: auto;
   max-width: 100%;
   display: block;
+}
+
+figure {
+  margin-inline: 0;
+}
+figcaption {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--grey-text);
 }
 
 input,

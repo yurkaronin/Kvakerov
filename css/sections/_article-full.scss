@@ -74,7 +74,7 @@
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
-  p {
+  &__lead {
     margin-bottom: 60px;
   }
   .text-big {
@@ -83,5 +83,45 @@
     line-height: 130%;
     color: var(--black-text);
     padding: 0 32px;
+  }
+
+  .big-cite {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 1023px) {
+    &__hero {
+      .title {
+        font-size: 45px;
+      }
+    }
+    &__lead {
+      margin-bottom: 40px;
+    }
+    &__content-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__hero--grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    &__back-to {
+      margin: 0;
+    }
+    &__hero {
+      .title {
+        font-size: 35px;
+      }
+    }
+    .big-cite {
+      margin-bottom: 30px;
+    }
+    .text-big {
+      font-size: 16px;
+      padding: 0;
+    }
   }
 }

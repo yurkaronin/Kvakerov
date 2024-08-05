@@ -39,6 +39,33 @@
     position: relative;
     z-index: 2;
   }
+  &__photo {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 34px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 44px 24px;
+
+    &::before {
+      width: 96px;
+      height: 70px;
+      top: 16px;
+      left: 20px;
+    }
+
+    &__text {
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+  }
 }
 
 .big-cite--mod {
@@ -52,17 +79,5 @@
     font-size: 14px;
     line-height: 130%;
     color: var(--grey-text);
-  }
-}
-
-.big-cite__photo {
-  max-width: 100%;
-  width: 100%;
-  margin-top: 34px;
-
-  img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
   }
 }

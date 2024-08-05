@@ -1,0 +1,17 @@
+.subtitle {
+  display: block;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--black-text);
+
+  @media (max-width: 1023px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
