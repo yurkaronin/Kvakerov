@@ -6,7 +6,7 @@
     margin-top: -200px;
   }
   .swiper-button-group {
-    display: block;
+    display: grid;
   }
   &__item {
     position: relative;
@@ -38,7 +38,7 @@
     margin: 0;
     font-weight: 600;
     font-size: 30px;
-    line-height: 100%;
+    line-height: 120%;
     color: #fff;
   }
   &__text {
@@ -56,10 +56,44 @@
     align-items: flex-end;
   }
 
-  @media (max-width: 767px) {
+
+  @media (max-width: 1023px) {
     &__details {
       padding: 66px 40px;
       min-height: 345px;
+    }
+    &__grid {
+      grid-template-columns: 210px 1fr;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__transform {
+      margin-top: -120px;
+    }
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    &__details {
+      padding: 0;
+      min-height: initial;
+      margin-bottom: 30px;
+    }
+    &__image {
+      position: initial;
+      margin-bottom: 20px;
+    }
+    &__title {
+      br {
+        display: none;
+      }
     }
   }
 }

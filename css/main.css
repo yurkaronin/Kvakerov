@@ -3423,7 +3423,7 @@ input[type=radio].visually-hidden {
   margin-top: -200px;
 }
 .about-slider .swiper-button-group {
-  display: block;
+  display: grid;
 }
 .about-slider__item {
   position: relative;
@@ -3460,7 +3460,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   font-weight: 600;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 120%;
   color: #fff;
 }
 .about-slider__text {
@@ -3479,10 +3479,40 @@ input[type=radio].visually-hidden {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .about-slider__details {
     padding: 66px 40px;
     min-height: 345px;
+  }
+  .about-slider__grid {
+    grid-template-columns: 210px 1fr;
+  }
+  .about-slider__title {
+    font-size: 24px;
+  }
+  .about-slider__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .about-slider__transform {
+    margin-top: -120px;
+  }
+  .about-slider__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-slider__details {
+    padding: 0;
+    min-height: initial;
+    margin-bottom: 30px;
+  }
+  .about-slider__image {
+    position: initial;
+    margin-bottom: 20px;
+  }
+  .about-slider__title br {
+    display: none;
   }
 }
 

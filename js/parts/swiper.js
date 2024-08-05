@@ -54,10 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 25000,
         disableOnInteraction: false,
       },
-      pagination: {
-        el: ".about-slider .swiper-pagination",
-        clickable: true,
-      },
+
       navigation: {
         nextEl: ".about-slider .swiper-button-next",
         prevEl: ".about-slider .swiper-button-prev",
