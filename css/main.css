@@ -3024,12 +3024,12 @@ input[type=radio].visually-hidden {
 .article-full .big-cite {
   margin-bottom: 60px;
 }
-.article-full h1,
-.article-full h2,
-.article-full h3,
-.article-full h4,
-.article-full h5,
-.article-full h6 {
+.article-full h1:not(class),
+.article-full h2:not(class),
+.article-full h3:not(class),
+.article-full h4:not(class),
+.article-full h5:not(class),
+.article-full h6:not(class) {
   font-style: normal;
   font-family: var(--font-family);
   position: relative;
@@ -3083,12 +3083,12 @@ input[type=radio].visually-hidden {
   .article-full__content-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .article-full h1,
-  .article-full h2,
-  .article-full h3,
-  .article-full h4,
-  .article-full h5,
-  .article-full h6 {
+  .article-full h1:not(class),
+  .article-full h2:not(class),
+  .article-full h3:not(class),
+  .article-full h4:not(class),
+  .article-full h5:not(class),
+  .article-full h6:not(class) {
     font-size: 42px;
   }
 }
@@ -3110,12 +3110,12 @@ input[type=radio].visually-hidden {
     font-size: 16px;
     padding: 0;
   }
-  .article-full h1,
-  .article-full h2,
-  .article-full h3,
-  .article-full h4,
-  .article-full h5,
-  .article-full h6 {
+  .article-full h1:not(class),
+  .article-full h2:not(class),
+  .article-full h3:not(class),
+  .article-full h4:not(class),
+  .article-full h5:not(class),
+  .article-full h6:not(class) {
     font-size: 32px;
   }
 }

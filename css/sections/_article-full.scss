@@ -89,12 +89,12 @@
     margin-bottom: 60px;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1:not(class),
+  h2:not(class),
+  h3:not(class),
+  h4:not(class),
+  h5:not(class),
+  h6:not(class) {
     font-style: normal;
     font-family: var(--font-family);
     position: relative;
@@ -163,12 +163,12 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1:not(class),
+    h2:not(class),
+    h3:not(class),
+    h4:not(class),
+    h5:not(class),
+    h6:not(class) {
       font-size: 42px;
     }
   }
@@ -194,12 +194,12 @@
       padding: 0;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1:not(class),
+    h2:not(class),
+    h3:not(class),
+    h4:not(class),
+    h5:not(class),
+    h6:not(class) {
       font-size: 32px;
     }
   }
