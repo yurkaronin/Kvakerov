@@ -1,0 +1,27 @@
+.technologies-card {
+  font-size: 16px;
+  line-height: 120%;
+  color: #323232;
+  font-weight: 400;
+  margin: 0;
+
+  &__image {
+    height: 285px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+
+    img {
+
+
+    }
+  }
+
+
+
+  b {
+    display: block;
+  }
+}
