@@ -29,3 +29,13 @@ input[type="radio"].visually-hidden {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.object-scroll {
+  max-width: 100%;
+  overflow: auto;
+
+  a {
+    display: block;
+    width: max-content;
+  }
+}
