@@ -3024,6 +3024,55 @@ input[type=radio].visually-hidden {
 .article-full .big-cite {
   margin-bottom: 60px;
 }
+.article-full h1,
+.article-full h2,
+.article-full h3,
+.article-full h4,
+.article-full h5,
+.article-full h6 {
+  font-style: normal;
+  font-family: var(--font-family);
+  position: relative;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 1;
+  color: var(--black-text);
+}
+.article-full b {
+  color: var(--black-text);
+}
+.article-full table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+.article-full td,
+.article-full th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+.article-full th {
+  background-color: rgb(235, 235, 235);
+}
+.article-full td {
+  text-align: center;
+}
+.article-full tr:nth-child(even) td {
+  background-color: rgb(250, 250, 250);
+}
+.article-full tr:nth-child(odd) td {
+  background-color: rgb(245, 245, 245);
+}
+.article-full caption {
+  padding: 10px;
+}
+.article-full tbody {
+  font-size: 90%;
+}
+.article-full tfoot {
+  font-weight: bold;
+}
 @media (max-width: 1023px) {
   .article-full__hero .title {
     font-size: 45px;
@@ -3033,6 +3082,14 @@ input[type=radio].visually-hidden {
   }
   .article-full__content-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .article-full h1,
+  .article-full h2,
+  .article-full h3,
+  .article-full h4,
+  .article-full h5,
+  .article-full h6 {
+    font-size: 42px;
   }
 }
 @media (max-width: 767px) {
@@ -3052,6 +3109,14 @@ input[type=radio].visually-hidden {
   .article-full .text-big {
     font-size: 16px;
     padding: 0;
+  }
+  .article-full h1,
+  .article-full h2,
+  .article-full h3,
+  .article-full h4,
+  .article-full h5,
+  .article-full h6 {
+    font-size: 32px;
   }
 }
 
