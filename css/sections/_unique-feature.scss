@@ -1,0 +1,43 @@
+.unique-feature {
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr auto 1fr;
+  }
+  &_name {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  &__details {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  &__details:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+  &__list {
+    li {
+      position: relative;
+      padding-left: 15px;
+      &::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: var(--yellow);
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+  }
+
+  &__image {
+    margin-top: 40px;
+  }
+}

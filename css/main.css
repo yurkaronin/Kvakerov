@@ -2213,6 +2213,83 @@ input[type=radio].visually-hidden {
   }
 }
 
+.steps-list {
+  display: grid;
+  gap: 60px 30px;
+  grid-template-columns: repeat(2, 1fr);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--grey-text);
+}
+.steps-list span {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 100%;
+  color: var(--yellow);
+}
+.steps-list li {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto 1fr;
+}
+@media (max-width: 1023px) {
+  .steps-list {
+    font-size: 14px;
+    gap: 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .steps-list li {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.tag-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: 40px;
+}
+.tag-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--black-text);
+  padding: 10px 20px;
+  min-height: 50px;
+  border: 1px solid var(--black-text);
+  border-radius: 60px 100px 100px 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.header-label {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
 .section {
   position: relative;
   padding-top: 32px;
@@ -3514,6 +3591,123 @@ input[type=radio].visually-hidden {
   .about-slider__title br {
     display: none;
   }
+}
+
+.how-it-works {
+  background-color: var(--white);
+  padding: 50px 65px;
+  border-radius: 30px 0 0 0;
+  padding-bottom: 0;
+  margin-bottom: 40px;
+}
+.how-it-works__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr auto;
+}
+.how-it-works__transform {
+  margin-top: -75px;
+}
+@media (max-width: 1023px) {
+  .how-it-works {
+    padding: 30px 40px;
+    padding-bottom: 20px;
+  }
+  .how-it-works__transform {
+    margin-top: -45px;
+  }
+  .how-it-works__grid {
+    grid-template-columns: 1fr 185px;
+  }
+}
+@media (max-width: 767px) {
+  .how-it-works {
+    padding: 32px 25px;
+  }
+  .how-it-works__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .how-it-works__transform {
+    margin-top: 0;
+  }
+}
+
+.maximum-efficiency-slider .wrapper {
+  position: relative;
+}
+.maximum-efficiency-slider .swiper-button-group {
+  display: grid;
+}
+.maximum-efficiency-slider .swiper-slide {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.maximum-efficiency-slider .swiper {
+  margin-bottom: 40px;
+}
+.maximum-efficiency-slider__item {
+  max-width: 155px;
+}
+.maximum-efficiency-slider__item a {
+  display: block;
+}
+.maximum-efficiency-slider__item img {
+  display: block;
+  margin-bottom: 24px;
+}
+.maximum-efficiency-slider__item span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: lowercase;
+  color: var(--black-text);
+  text-align: center;
+  padding-inline: 12px;
+}
+.maximum-efficiency-slider .text {
+  margin: 0;
+}
+
+.unique-feature__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr auto 1fr;
+}
+.unique-feature_name {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+}
+.unique-feature__details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.unique-feature__details:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+.unique-feature__list li {
+  position: relative;
+  padding-left: 15px;
+}
+.unique-feature__list li::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: var(--yellow);
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.unique-feature__image {
+  margin-top: 40px;
 }
 
 .footer {

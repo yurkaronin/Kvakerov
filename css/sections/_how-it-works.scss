@@ -1,0 +1,39 @@
+.how-it-works {
+  background-color: var(--white);
+  padding: 50px 65px;
+  border-radius: 30px 0 0 0;
+  padding-bottom: 0;
+  margin-bottom: 40px;
+
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr auto;
+
+  }
+  &__transform {
+    margin-top: -75px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 30px 40px;
+    padding-bottom: 20px;
+    &__transform {
+      margin-top: -45px;
+    }
+    &__grid {
+      grid-template-columns: 1fr 185px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 32px 25px;
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    &__transform {
+      margin-top: 0;
+    }
+  }
+}

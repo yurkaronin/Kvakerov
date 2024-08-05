@@ -62,6 +62,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Слайдер Максимальная эффективность (продукты сортировки)
+  if (document.querySelector(".maximum-efficiency-slider")) {
+    console.log("Слайдер maximum-efficiency-slider ЕСТЬ");
+
+    const swiper = new Swiper(".maximum-efficiency-slider .swiper", {
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".maximum-efficiency-slider .swiper-button-next",
+        prevEl: ".maximum-efficiency-slider .swiper-button-prev",
+      }
+    });
+  }
+
   // Слайдер с логотипами партнёров
   if (document.querySelector(".partners__slider")) {
     console.log("Слайдер partners__slider ЕСТЬ");

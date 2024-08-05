@@ -1,0 +1,23 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: 40px;
+
+  li {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black-text);
+    padding: 10px 20px;
+    min-height: 50px;
+    border: 1px solid var(--black-text);
+    border-radius: 60px 100px 100px 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+}
