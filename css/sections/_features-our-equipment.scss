@@ -1,0 +1,38 @@
+.features-our-equipment {
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 8fr 4fr;
+  }
+  .advantages__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  &__transform {
+    margin-top: -235px;
+    margin-left: -100px;
+  }
+
+  @media (max-width: 1023px) {
+    .subtitle {
+      margin-bottom: 50px;
+    }
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    &__transform {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .advantages__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

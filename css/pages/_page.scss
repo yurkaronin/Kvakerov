@@ -46,3 +46,13 @@
 .page-blog {
 
 }
+
+.page-about {
+  .hero-inner {
+    background-color: var(--bg-2);
+    color: var(--white);
+    .title {
+      color: inherit;
+    }
+  }
+}

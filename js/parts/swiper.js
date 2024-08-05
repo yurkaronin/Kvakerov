@@ -43,6 +43,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Слайдер о компании с одним слайдом за раз
+  if (document.querySelector(".about-slider")) {
+    console.log("Слайдер about-slider ЕСТЬ");
+
+    const swiper = new Swiper(".about-slider .swiper", {
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".about-slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".about-slider .swiper-button-next",
+        prevEl: ".about-slider .swiper-button-prev",
+      }
+    });
+  }
+
   // Слайдер с логотипами партнёров
   if (document.querySelector(".partners__slider")) {
     console.log("Слайдер partners__slider ЕСТЬ");
