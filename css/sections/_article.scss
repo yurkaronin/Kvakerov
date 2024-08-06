@@ -1,0 +1,35 @@
+.article {
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+    &--mod .article__image {
+      order: 1;
+    }
+  }
+  &__image {
+    margin-left: -40px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 32px;
+  }
+
+  &__grid--mod &__image {
+    order: -1;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: -40px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: 767px) {
+    &__grid {
+      display: block;
+    }
+    &__image {
+      margin-inline: 0 !important;
+      padding-inline: 0 !important;
+    }
+  }
+}
