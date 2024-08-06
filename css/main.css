@@ -3190,12 +3190,12 @@ input[type=radio].visually-hidden {
 .article-full .big-cite {
   margin-bottom: 60px;
 }
-.article-full h1:not(class),
-.article-full h2:not(class),
-.article-full h3:not(class),
-.article-full h4:not(class),
-.article-full h5:not(class),
-.article-full h6:not(class) {
+.article-full h1:not([class]),
+.article-full h2:not([class]),
+.article-full h3:not([class]),
+.article-full h4:not([class]),
+.article-full h5:not([class]),
+.article-full h6:not([class]) {
   font-style: normal;
   font-family: var(--font-family);
   position: relative;
@@ -3249,12 +3249,12 @@ input[type=radio].visually-hidden {
   .article-full__content-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .article-full h1:not(class),
-  .article-full h2:not(class),
-  .article-full h3:not(class),
-  .article-full h4:not(class),
-  .article-full h5:not(class),
-  .article-full h6:not(class) {
+  .article-full h1:not([class]),
+  .article-full h2:not([class]),
+  .article-full h3:not([class]),
+  .article-full h4:not([class]),
+  .article-full h5:not([class]),
+  .article-full h6:not([class]) {
     font-size: 42px;
   }
 }
@@ -3276,14 +3276,29 @@ input[type=radio].visually-hidden {
     font-size: 16px;
     padding: 0;
   }
-  .article-full h1:not(class),
-  .article-full h2:not(class),
-  .article-full h3:not(class),
-  .article-full h4:not(class),
-  .article-full h5:not(class),
-  .article-full h6:not(class) {
+  .article-full h1:not([class]),
+  .article-full h2:not([class]),
+  .article-full h3:not([class]),
+  .article-full h4:not([class]),
+  .article-full h5:not([class]),
+  .article-full h6:not([class]) {
     font-size: 32px;
   }
+}
+
+.hero-custom {
+  position: relative;
+}
+.hero-custom__hero-item {
+  max-width: 842px;
+  position: relative;
+  z-index: 2;
+}
+.hero-custom__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .custom-review {
@@ -4218,6 +4233,10 @@ input[type=radio].visually-hidden {
 }
 .page-about .hero-inner .title {
   color: inherit;
+}
+
+.page-custom .main {
+  padding-top: 0 !important;
 }
 
 .header-sticky .header {

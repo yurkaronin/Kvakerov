@@ -89,19 +89,21 @@
     margin-bottom: 60px;
   }
 
-  h1:not(class),
-  h2:not(class),
-  h3:not(class),
-  h4:not(class),
-  h5:not(class),
-  h6:not(class) {
-    font-style: normal;
-    font-family: var(--font-family);
-    position: relative;
-    font-weight: 600;
-    font-size: 55px;
-    line-height: 1;
-    color: var(--black-text);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:not([class]) {
+      font-style: normal;
+      font-family: var(--font-family);
+      position: relative;
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 1;
+      color: var(--black-text);
+    }
   }
 
   b {
@@ -143,7 +145,6 @@
 
   tbody {
     font-size: 90%;
-
   }
 
   tfoot {
@@ -163,13 +164,15 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
-    h1:not(class),
-    h2:not(class),
-    h3:not(class),
-    h4:not(class),
-    h5:not(class),
-    h6:not(class) {
-      font-size: 42px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:not([class]) {
+        font-size: 42px;
+      }
     }
   }
 
@@ -194,13 +197,30 @@
       padding: 0;
     }
 
-    h1:not(class),
-    h2:not(class),
-    h3:not(class),
-    h4:not(class),
-    h5:not(class),
-    h6:not(class) {
-      font-size: 32px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:not([class]) {
+        font-size: 32px;
+      }
     }
+  }
+}
+
+.hero-custom {
+  position: relative;
+  &__hero-item {
+    max-width: 842px;
+    position: relative;
+    z-index: 2;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
   }
 }
