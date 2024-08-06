@@ -12,7 +12,6 @@
   --yellow4: #bc9d2e;
   --bg: #f0f0f0;
   --bg-2: #1c1c1c;
-  --bg-3: #e5e5e5;
   --bg-3: #F0F0F0;
   --line: #dddddd;
   --red: #aa0a0a;
@@ -379,7 +378,7 @@ svg * {
   background-color: var(--yellow);
 }
 
-h1:not(class), h2:not(class), h3:not(class), h4:not(class), h5:not(class), h6:not(class) {
+h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
   color: var(--black-text);
 }
 
@@ -1717,6 +1716,7 @@ input[type=radio].visually-hidden {
 }
 .breadcrumbs {
   margin-bottom: 20px;
+  max-width: 420px;
 }
 .breadcrumbs ul {
   display: -webkit-box;
@@ -3437,16 +3437,20 @@ input[type=radio].visually-hidden {
   padding-top: 58px;
   padding-bottom: 58px;
 }
+.photo-slider .wrapper {
+  position: relative;
+}
+.photo-slider .swiper-button-group {
+  display: grid;
+}
 .photo-slider .swiper {
   overflow: initial;
-  padding-bottom: 55px;
 }
 .photo-slider .swiper-slide {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   width: 100%;
-  height: 650px;
 }
 .photo-slider .swiper-slide a {
   display: block;
@@ -3454,7 +3458,6 @@ input[type=radio].visually-hidden {
   max-width: -moz-max-content;
   max-width: max-content;
   width: 100%;
-  height: 100%;
 }
 .photo-slider .swiper-slide a img {
   display: block;
@@ -3462,6 +3465,15 @@ input[type=radio].visually-hidden {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.photo-slider figcaption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--black-text);
+  font-style: normal;
+  opacity: 1;
+  margin-top: 24px;
 }
 @media (max-width: 767px) {
   .photo-slider .swiper-slide {
@@ -3478,6 +3490,9 @@ input[type=radio].visually-hidden {
 .hero-inner__transfotm {
   position: relative;
   margin-top: -120px;
+}
+.hero-inner__transfotm .title {
+  max-width: 720px;
 }
 .hero-inner__transfotm-sm {
   position: relative;
@@ -3732,44 +3747,6 @@ input[type=radio].visually-hidden {
   }
 }
 
-.maximum-efficiency-slider .wrapper {
-  position: relative;
-}
-.maximum-efficiency-slider .swiper-button-group {
-  display: grid;
-}
-.maximum-efficiency-slider .swiper-slide {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-.maximum-efficiency-slider .swiper {
-  margin-bottom: 40px;
-}
-.maximum-efficiency-slider__item {
-  max-width: 155px;
-}
-.maximum-efficiency-slider__item a {
-  display: block;
-}
-.maximum-efficiency-slider__item img {
-  display: block;
-  margin-bottom: 24px;
-}
-.maximum-efficiency-slider__item span {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  text-transform: lowercase;
-  color: var(--black-text);
-  text-align: center;
-  padding-inline: 12px;
-}
-.maximum-efficiency-slider .text {
-  margin: 0;
-}
-
 .unique-feature__grid {
   display: grid;
   gap: 30px;
@@ -3892,6 +3869,57 @@ input[type=radio].visually-hidden {
     margin-inline: 0 !important;
     padding-inline: 0 !important;
   }
+}
+
+.sorting-product .wrapper {
+  position: relative;
+}
+.sorting-product .swiper-slide {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: initial;
+}
+.sorting-product__slider {
+  margin-bottom: 40px;
+}
+.sorting-product .text {
+  margin: 0;
+}
+.sorting-product .swiper-button-group {
+  display: grid;
+}
+
+.sorting-product-item {
+  max-width: 155px;
+}
+.sorting-product-item__image {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sorting-product-item img {
+  display: block;
+}
+.sorting-product-item span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--black-text);
+  text-align: center;
+  padding-inline: 12px;
 }
 
 .footer {

@@ -32,10 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 25000,
         disableOnInteraction: false,
       },
-      pagination: {
-        el: ".reviews__slider .swiper-pagination",
-        clickable: true,
-      },
+
       navigation: {
         nextEl: ".reviews .swiper-button-next",
         prevEl: ".reviews .swiper-button-prev",
@@ -62,22 +59,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Слайдер Максимальная эффективность (продукты сортировки)
-  if (document.querySelector(".maximum-efficiency-slider")) {
-    console.log("Слайдер maximum-efficiency-slider ЕСТЬ");
+  // // Слайдер Максимальная эффективность (продукты сортировки)
+  // if (document.querySelector(".sorting-product-slider")) {
+  //   console.log("Слайдер sorting-product-slider ЕСТЬ");
 
-    const swiper = new Swiper(".maximum-efficiency-slider .swiper", {
+  //   const swiper = new Swiper(".sorting-product-slider .swiper", {
+  //     spaceBetween: 30,
+  //     slidesPerView: 'auto',
+  //     loop: true,
+  //     autoplay: {
+  //       delay: 25000,
+  //       disableOnInteraction: false,
+  //     },
+
+  //     navigation: {
+  //       nextEl: ".sorting-product-slider .swiper-button-next",
+  //       prevEl: ".sorting-product-slider .swiper-button-prev",
+  //     }
+  //   });
+  // }
+
+
+  // продукты сортировки
+  if (document.querySelector(".js-product-slider")) {
+
+    const swiper = new Swiper(".js-product-slider .swiper", {
       spaceBetween: 30,
       slidesPerView: 'auto',
       loop: true,
+
       autoplay: {
         delay: 25000,
         disableOnInteraction: false,
       },
 
       navigation: {
-        nextEl: ".maximum-efficiency-slider .swiper-button-next",
-        prevEl: ".maximum-efficiency-slider .swiper-button-prev",
+        nextEl: ".js-product-slider .swiper-button-next",
+        prevEl: ".js-product-slider .swiper-button-prev",
       }
     });
   }

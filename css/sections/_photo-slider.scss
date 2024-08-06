@@ -4,21 +4,28 @@
   padding-top: calc(90px - 32px);
   padding-bottom: calc(90px - 32px);
 
+  .wrapper {
+    position: relative;
+  }
+
+  .swiper-button-group {
+    display: grid;
+  }
+
   .swiper {
     overflow: initial;
-    padding-bottom: 55px;
-    // margin-bottom: 90px;
   }
+
   .swiper-slide {
     max-width: max-content;
     width: 100%;
-    height: 650px;
+    // height: 650px;
 
     a {
       display: block;
       max-width: max-content;
       width: 100%;
-      height: 100%;
+      // height: 100%;
 
       img {
         display: block;
@@ -29,6 +36,19 @@
     }
   }
 
+  figcaption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black-text);
+    font-style: normal;
+    opacity: 1;
+    margin-top: 24px;
+  }
+
+  figure {
+
+  }
   @media (max-width: 767px) {
     .swiper-slide {
       height: 255px;
