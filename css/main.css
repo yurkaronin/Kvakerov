@@ -3890,9 +3890,6 @@ input[type=radio].visually-hidden {
   display: grid;
 }
 
-.sorting-product-item {
-  max-width: 155px;
-}
 .sorting-product-item__image {
   border-radius: 50%;
   padding: 10px;
@@ -3908,6 +3905,8 @@ input[type=radio].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 155px;
+  height: 155px;
 }
 .sorting-product-item img {
   display: block;
