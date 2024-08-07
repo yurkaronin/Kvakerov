@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="page page--inner">
+<body class="page-inner">
 
   <!-- шапка  -->
   <header class="header">
@@ -221,102 +221,87 @@
   <main class="main">
 
     <!-- Первый блок контента  -->
-    <section class="inner-top section section--gray transform">
-      <div class="wrapper transform__content">
+    <section class="hero-inner section fg fg-top-black">
+      <div class="wrapper hero-inner__transfotm">
 
-        <div class="section__header">
-          <div class="breadcrumbs">
-            <ul class="list-reset">
-              <li>
-                <a href="#">Главная</a>
-              </li>
-              <li>
-                <a>Каталог</a>
-              </li>
-            </ul>
-          </div>
-
-          <h1 class="title">Каталог</h1>
+        <div class="breadcrumbs">
+          <ul class="list-reset">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a>Каталог</a>
+            </li>
+          </ul>
         </div>
+        <h1 class="title">Каталог</h1>
 
-        <div class="section__body">
+        <div class="catalog-filter">
+          <ul class="list-reset">
+            <li>
+              <a href="#">по типу сортировки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-preview">
+          <div class="catalog-preview__grid">
 
-          <div class="catalog-filter">
-            <ul class="list-reset">
-              <li>
-                <a href="#">по типу сортировки</a>
-              </li>
-            </ul>
-          </div>
+            <div class="catalog-preview__group catalog-preview__group--full">
 
-          <div class="catalog-preview-grid">
+              <ul class="catalog-preview__list list-reset">
 
-            <div class="catalog-preview-group catalog-preview-group--full">
-              <ul class="articles-list articles-list--mod list-reset">
+                <li class="catalog-preview__item">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/1.png" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Воздушная<br>
+                        колонка</h3>
+                      <p class="catalog-preview__item-text">от пыли, легких примесей</p>
+                    </div>
+                  </a>
 
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/1.png" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Воздушная<br>
-                          колонка</h2>
-                        <p class="article-preview__lead">от пыли, легких примесей</p>
-                      </div>
-                    </a>
-                  </article>
                 </li>
 
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/2.png" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Пневмостол</h2>
-                        <p class="article-preview__lead">по удельному весу</p>
-                      </div>
-                    </a>
-                  </article>
+                <li class="catalog-preview__item">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/2.png" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Пневмостол</h3>
+                      <p class="catalog-preview__item-text">по удельному весу</p>
+                    </div>
+                  </a>
                 </li>
-
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/3.png" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Колосортер</h2>
-                        <p class="article-preview__lead">по цвету, оттенку, форме
-                          и структуре</p>
-                      </div>
-                    </a>
-                  </article>
+                <li class="catalog-preview__item">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/3.png" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Колосортер</h3>
+                      <p class="catalog-preview__item-text">по цвету, оттенку, форме и структуре</p>
+                    </div>
+                  </a>
                 </li>
-
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/4.png" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Рентген</h2>
-                        <p class="article-preview__lead">по цвету, оттенку, форме
-                          и структуре</p>
-                      </div>
-                    </a>
-                  </article>
+                <li class="catalog-preview__item">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/4.png" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Рентген</h3>
+                      <p class="catalog-preview__item-text">по цвету, оттенку, форме и структуре</p>
+                    </div>
+                  </a>
                 </li>
 
               </ul>
             </div>
 
-            <div class="catalog-preview-group">
+            <div class="catalog-preview__group">
               <div class="catalog-filter">
                 <ul class="list-reset">
                   <li>
@@ -324,40 +309,35 @@
                   </li>
                 </ul>
               </div>
-              <ul class="articles-list articles-list--mod-2 list-reset">
+              <ul class="catalog-preview__list list-reset">
 
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/5.png" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Дозатор,<br>упаковщик</h2>
-                        <p class="article-preview__lead">для точной дозировки в пакеты, биг бэги</p>
-                      </div>
-                    </a>
-                  </article>
+                <li class="catalog-preview__item">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/5.png" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Дозатор,<br>упаковщик</h3>
+                      <p class="catalog-preview__item-text">для точной дозировки в пакеты, биг бэги</p>
+                    </div>
+                  </a>
                 </li>
-
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/6.png" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Транспортное<br>
-                          оборудование</h2>
-                        <p class="article-preview__lead">для вертикальной транспортировки</p>
-                      </div>
-                    </a>
-                  </article>
+                <li class="catalog-preview__item">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/6.png" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Транспортное<br>оборудование</h3>
+                      <p class="catalog-preview__item-text">для вертикальной транспортировки</p>
+                    </div>
+                  </a>
                 </li>
 
               </ul>
             </div>
-            <div class="catalog-preview-group">
+
+            <div class="catalog-preview__group">
               <div class="catalog-filter">
                 <ul class="list-reset">
                   <li>
@@ -365,26 +345,23 @@
                   </li>
                 </ul>
               </div>
-              <ul class="articles-list articles-list--mod-3 list-reset">
+              <ul class="catalog-preview__list list-reset">
 
-                <li>
-                  <article class="article-preview article-preview--mod">
-                    <a href="#">
-                      <div class="article-preview__image">
-                        <img src="./img/catalog/photo.jpg" alt="">
-                      </div>
-                      <div class="article-preview__details">
-                        <h2 class="article-preview__title">Технический контроль</h2>
-                      </div>
-                    </a>
-                  </article>
+                <li class="catalog-preview__item catalog-preview__item--mod">
+                  <a class="catalog-preview__item-link" href="#">
+                    <div class="catalog-preview__item-image">
+                      <img src="./img/catalog/photo.jpg" alt="">
+                    </div>
+                    <div class="catalog-preview__item-details">
+                      <h3 class="catalog-preview__item-title">Технический контроль</h3>
+                    </div>
+                  </a>
                 </li>
 
               </ul>
             </div>
+
           </div>
-
-
         </div>
 
       </div>
