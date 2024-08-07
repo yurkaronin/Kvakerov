@@ -1,0 +1,36 @@
+.do-i-need {
+
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+  }
+  &__icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 22px;
+  }
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grey-text);
+  }
+  b {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black-text);
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 767px) {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.catalog-collection {
+  &__tags {
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    display: block;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: var(--black-text);
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 1023px) {
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}

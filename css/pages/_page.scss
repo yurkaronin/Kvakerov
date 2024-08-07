@@ -1,3 +1,5 @@
+
+// Главная страница
 .page-home {
   .footer {
     position: relative;
@@ -18,6 +20,7 @@
   }
 }
 
+// Типовая внутренняя страница
 .page-inner {
 
   .header {
@@ -43,10 +46,7 @@
   }
 }
 
-.page-blog {
-
-}
-
+// Страница О КОМПАНИИ
 .page-about {
   .hero-inner {
     background-color: var(--bg-2);
@@ -57,6 +57,8 @@
   }
 }
 
+
+// Страница для пекарен с необычным первым экраном
 .page-custom {
   .main {
     padding-top: 0 !important;

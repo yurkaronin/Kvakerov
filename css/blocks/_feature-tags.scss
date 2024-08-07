@@ -1,0 +1,33 @@
+.feature-tags {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  margin-right: -15px;
+
+  li {
+    max-width: max-content;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    padding: 0 16px;
+    border: 1px solid var(--black-text);
+    border-radius: 80px 100px 100px 0;
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black-text);
+
+
+  }
+  b {
+    font-weight: 600;
+    margin-left: 6px;
+  }
+
+  @media (max-width: 767px) {
+
+  }
+}
