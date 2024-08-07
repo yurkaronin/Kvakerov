@@ -220,7 +220,7 @@
   <!-- Основной контент  -->
   <main class="main">
 
-    <section class="hero-custom section section--black fg fg-bottom-black article-full--mod">
+    <section class="hero-custom section section--black fg fg-bottom-gray article-full--mod">
       <div class="wrapper">
 
         <div class="hero-custom__details">
@@ -239,7 +239,7 @@
               </ul>
             </div>
           </div>
-          <h1 class="title">Очистка хлебных добавок <br>
+          <h1 class="hero-custom__title title">Очистка хлебных добавок <br>
             от примесей способ экономии <br>
             и увеличения прибыли <br>
             производства</h1>
@@ -250,7 +250,10 @@
         </div>
 
         <div class="hero-custom__image">
-          <img src="./img/bakery/1.png" alt="фото" loading="lazy">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/bakery/1-mobile.png">
+            <img src="./img/bakery/1.png" alt="фото" loading="lazy">
+          </picture>
 
         </div>
       </div>

@@ -209,18 +209,3 @@
     }
   }
 }
-
-.hero-custom {
-  position: relative;
-  &__hero-item {
-    max-width: 842px;
-    position: relative;
-    z-index: 2;
-  }
-  &__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-  }
-}
