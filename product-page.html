@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Список страниц проекта</title>
+  <title>Карточка товара</title>
 
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -44,7 +45,7 @@
 
           <nav class="main-nav">
             <div class="main-nav__header">
-              <b class="main-nav__title">Меню</b>
+              <h3 class="main-nav__title">Меню</h3>
               <button class="main-nav__close js-menu-btn" title="Закрыть меню">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -64,12 +65,12 @@
                   <svg>
                     <use href="./svg/sprite.svg#icon-arrow-down"></use>
                   </svg>
-                  <span class="main-nav__button" title="показать подкатегории">
+                  <button class="main-nav__button" type="button" title="показать подкатегории">
                     <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M26 2L14 14L2 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                     </svg>
 
-                  </span>
+                  </button>
                 </a>
                 <ul class="main-nav__sub-list">
                   <li class="main-nav__sub-item">
@@ -114,7 +115,7 @@
           <div class="header__mobile-contacts">
             <b>Отдел продаж: </b>
             <a class="phone" href="tel:78003508341">7 (800) 350-83-41</a>
-            <a class="link" href="#" data-target="modal-call-back">Заказать звонок</a>
+            <a class="link" href="#">Заказать звонок</a>
           </div>
 
 
@@ -216,34 +217,254 @@
     </div>
   </header>
 
+  <!-- Основной контент  -->
   <main class="main">
 
+    <!-- Первый блок контента  -->
     <section class="hero-inner section fg fg-top-black">
+      <div class="wrapper hero-inner__transfotm">
+
+        <div class="breadcrumbs">
+          <ul class="list-reset">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Колосортеры</a>
+            </li>
+            <li>
+              <a href="#">Дозатор, упаковщик</a>
+            </li>
+            <li>
+              <a>Дозатор для фасовки сыпучих продуктов</a>
+            </li>
+          </ul>
+        </div>
+        <h1 class="title">Колорсортер <br>
+          Сапсан SE Micro 1</h1>
+
+      </div>
+    </section>
+
+    <!-- Какие засорители убирает  -->
+    <section class="sorting-product section">
       <div class="wrapper">
-        <h2 class="title">Список готовых страниц</h2>
+        <h3 class="title">Какие засорители <br>
+          убирает Колорсортер Сапсан?</h3>
 
-        <ol>
-          <li><a href="./home.html">Главная</a></li>
-          <li><a href="./reviews.html">Отзывы</a></li>
-          <li><a href="./contacts.html">Контакты</a></li>
-          <li><a href="./requisites.html">Реквизиты</a></li>
-          <li><a href="./blog.html">Блог</a></li>
+        <div class="sorting-product__slider js-product-slider">
 
-          <li><a href="./article.html">Статья</a></li>
-          <li><a href="./article-simple.html">Статья с другими контентом</a></li>
-          <li><a href="./article-werry-simple.html">Простая статья</a></li>
-          <li><a href="./about.html">О компании</a></li>
-          <li><a href="./technologies.html">Технологии</a></li>
-          <li><a href="./article-bakery.html">Для пекарен</a></li>
-          <li><a href="./article-coffe.html">Для кофе</a></li>
+          <div class="swiper">
+            <div class="swiper-wrapper">
 
-          <li><a href="./catalog.html">Каталог</a></li>
-          <li><a href="./catalog-equipment.html">Каталог оборудования</a></li>
-          <li><a href="./catalog-equipment-2.html">Каталог оборудования 2</a></li>
-          <li><a href="./product-page.html">Карточка товара</a></li>
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-21.png" alt="">
+                  </div>
+                  <span>Кофейная вишня</span>
+                </div>
+              </div>
 
-        </ol>
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-22.png" alt="">
+                  </div>
+                  <span>Палочки</span>
+                </div>
+              </div>
 
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-23.png" alt="">
+                  </div>
+                  <span>Кукуруза</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-24.png" alt="">
+                  </div>
+                  <span>Квакеры</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-25.png" alt="">
+                  </div>
+                  <span>Камни</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-26.png" alt="">
+                  </div>
+                  <span>Бобы</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-27.png" alt="">
+                  </div>
+                  <span>Колотые зерна</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-28.png" alt="">
+                  </div>
+                  <span>Кости</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-29.png" alt="">
+                  </div>
+                  <span>Скорлупа  орехов</span>
+                </div>
+              </div>
+
+              <!-- Слайд  -->
+              <div class="swiper-slide">
+                <div class="sorting-product-item">
+                  <div class="sorting-product-item__image">
+                    <img src="./img/sort-products/sort-product-30.png" alt="">
+                  </div>
+                  <span>Пережаренные зерна</span>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="swiper-button-group">
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-button swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма обратной связи  -->
+    <section class="contact-us section section--black fg fg-top-gray">
+      <div class="wrapper ">
+        <div class="section__header">
+          <h2 class="title">Протестируйте <br>
+            фотосепаратор Сапсан <br>
+            бесплатно на своём продукте</h2>
+        </div>
+        <div class="section__body">
+          <div class="form">
+            <form action="#">
+              <div class="form__grid">
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="text" name="user-name" placeholder="Укажите имя" required>
+                  </div>
+
+                </div>
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="email" name="user-mail" id="user-mail" placeholder="уточните e-mail">
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__element">
+                    <input type="tel" name="user-phone" placeholder="Введите телефон" required>
+                  </div>
+
+                </div>
+                <div class="form__item form__item--two">
+                  <div class="form__element">
+                    <textarea name="user-message" id="user-message" placeholder="Введите текст сообщения"></textarea>
+                  </div>
+                </div>
+                <div class="form__grid-item form__footer">
+                  <button class="form__button button" type="submit"><span>Оставить заявку</span></button>
+                  <div class="form__agree">
+                    <input type="checkbox" name="user-agree" id="user-agree-1" required checked>
+                    <label for="user-agree-1">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с политикой
+                      конфиденциальности</label>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="operation-principle section fg fg-top-black">
+      <div class="wrapper">
+        <h2 class="title">Принцип работы <br>
+          Колорсортера Сапсан</h2>
+          <p>Зерно засыпается в небольшой "загрузочный бункер", расположенный вверху Колорсортера, далее с помощью вибропитателя
+            по скатному лотку подаётся в зону, где расположены мощнейшие камеры и система освещения.</p>
+            <br>
+
+          <b class="subtitle">Есть несколько режимов:</b>
+          <br>
+          <ul class="steps-list list-reset">
+            <li>
+              <span>1.</span>
+              <p><b>Пропускание –</b><br>
+                когда свет пропускается
+                через объект и фиксируется количество прошедшего света.</p>
+
+            </li>
+            <li>
+              <span>2.</span>
+              <p><b>Отражение – </b><br>
+                когда свет отражается
+                от объекта и фиксируется количество отраженного
+                света.</p>
+            </li>
+            <li>
+              <span>3.</span>
+              <p><b>Комбинированный –</b><br>
+                когда одновременно идет
+                и пропускание, и отражение, таким образом повышается точность анализа.</p>
+
+            </li>
+            <li>
+              <span>4.</span>
+              <p><b>Отсортированное (проанализированное зерно) –</b><br>
+                высыпается в любые емкости
+                из выгрузных патрубков, расположенных в нижней
+                части машины.</p>
+            </li>
+            <li>
+              <span>5.</span>
+              <p><b>Алгоритмы преобразовывают </b> поток данных в графики и выводят на экран пользователя для дальнейшего анализа.</p>
+            </li>
+
+          </ul>
       </div>
     </section>
 
