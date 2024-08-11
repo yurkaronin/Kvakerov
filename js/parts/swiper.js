@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  // Первый экран на главной hero-home__slider
   if (document.querySelector(".hero-home__slider")) {
-    console.log("Слайдер hero-home__slider ЕСТЬ");
-
-    // const progressCircle = document.querySelector(".hero-home__slider .autoplay-progress svg");
-    // const progressContent = document.querySelector(".hero-home__slider .autoplay-progress span");
-
     const swiper = new Swiper(".hero-home__slider .swiper", {
       // Optional parameters
       loop: true,
@@ -19,12 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true,
       },
     });
-  }
+  };
 
   // Слайдер с отзывами reviews__slider
   if (document.querySelector(".reviews__slider")) {
-    console.log("Слайдер reviews__slider ЕСТЬ");
-
     const swiper = new Swiper(".reviews__slider .swiper", {
       spaceBetween: 30,
       loop: true,
@@ -38,12 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: ".reviews .swiper-button-prev",
       }
     });
-  }
+  };
 
   // Слайдер о компании с одним слайдом за раз
   if (document.querySelector(".about-slider")) {
-    console.log("Слайдер about-slider ЕСТЬ");
-
     const swiper = new Swiper(".about-slider .swiper", {
       spaceBetween: 30,
       loop: true,
@@ -57,32 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: ".about-slider .swiper-button-prev",
       }
     });
-  }
-
-  // // Слайдер Максимальная эффективность (продукты сортировки)
-  // if (document.querySelector(".sorting-product-slider")) {
-  //   console.log("Слайдер sorting-product-slider ЕСТЬ");
-
-  //   const swiper = new Swiper(".sorting-product-slider .swiper", {
-  //     spaceBetween: 30,
-  //     slidesPerView: 'auto',
-  //     loop: true,
-  //     autoplay: {
-  //       delay: 25000,
-  //       disableOnInteraction: false,
-  //     },
-
-  //     navigation: {
-  //       nextEl: ".sorting-product-slider .swiper-button-next",
-  //       prevEl: ".sorting-product-slider .swiper-button-prev",
-  //     }
-  //   });
-  // }
-
+  };
 
   // продукты сортировки
   if (document.querySelector(".js-product-slider")) {
-
     const swiper = new Swiper(".js-product-slider .swiper", {
       spaceBetween: 30,
       slidesPerView: 'auto',
@@ -98,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: ".js-product-slider .swiper-button-prev",
       }
     });
-  }
+  };
 
   // Слайдер с логотипами партнёров
   if (document.querySelector(".partners__slider")) {
@@ -136,11 +107,10 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
-  }
+  };
 
   // Слайдер с кастомными отзывами
   if (document.querySelector(".custom-review__slider")) {
-    console.log("Слайдер custom-review__slider ЕСТЬ");
     const swiper = new Swiper(".custom-review__slider .swiper", {
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -157,26 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".custom-review .swiper-button-next",
         prevEl: ".custom-review .swiper-button-prev",
       },
-      // breakpoints: {
-      //   320: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 20,
-      //   },
-      //   767: {
-      //     slidesPerView: 1.35,
-      //     spaceBetween: 30,
-      //   },
-      //   1024: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 30,
-      //   },
-      // },
     });
-  }
+  };
 
   // Слайдер с фотогалереей на всю ширину
   if (document.querySelector(".photo-slider")) {
-    console.log("Слайдер photo-slider ЕСТЬ");
     const swiper = new Swiper(".photo-slider .swiper", {
       slidesPerView: "auto",
       spaceBetween: 30,
@@ -212,7 +167,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Слайдер с карточками анонса товаров
   if (document.querySelector(".previews-slider")) {
-    console.log("Слайдер previews-slider ЕСТЬ");
     let swiper = new Swiper(".previews-slider .swiper", {
       loop: true,
       // freeMode: true,
@@ -245,6 +199,16 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 3,
           spaceBetween: 22,
         },
+      },
+    });
+  };
+
+  // Слайдер с большими фото в карточке товаров
+  if(document.querySelector(".js-product-card-slider")) {
+    var swiper = new Swiper(".js-product-card-slider", {
+      navigation: {
+        nextEl: ".js-product-card-slider .swiper-button-next",
+        prevEl: ".js-product-card-slider .swiper-button-prev",
       },
     });
   }
