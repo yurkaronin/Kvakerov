@@ -1,0 +1,104 @@
+.product-accordion {
+  & + & {
+    margin-top: 16px;
+  }
+  &__head {
+    display: none;
+  }
+  &__body {
+    transition: all 0.3s;
+
+    table {
+      min-width: 100%;
+      // max-width: max-content;
+      border-collapse: collapse;
+      margin: 20px auto;
+      overflow: auto;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #b5b5b5;
+      opacity: 0.7;
+    }
+    th {
+      padding: 10px;
+      border-bottom: 1px solid #b5b5b5;
+      text-align: left;
+      color: var(--black-text);
+    }
+    th:nth-child(2n),
+    td:nth-child(2n) {
+      color: var(--black-text);
+      opacity: 1;
+    }
+    caption {
+      font-size: 1.5em;
+      margin: 0;
+      margin-bottom: 20px;
+      text-align: left;
+      font-weight: 700;
+      color: var(--black-text);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__head {
+      display: grid;
+      gap: 12px;
+      align-items: center;
+      grid-template-columns: 1fr 16px;
+      padding: 10px 45px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: var(--black-text);
+      background-color: var(--yellow);
+
+      border-radius: 30px 30px 0 0;
+      height: 52px;
+      max-width: 100%;
+      width: 100%;
+      cursor: pointer;
+
+      svg {
+        transition: all 0.3s;
+      }
+
+      path {
+        stroke: currentColor;
+      }
+    }
+    &__body {
+      display: none;
+      opacity: 0;
+
+      table th:nth-child(1),
+      table td:nth-child(1) {
+        width: 30%; /* Ширина первой колонки */
+      }
+
+      table th:nth-child(2),
+      table td:nth-child(2) {
+        width: 70%; /* Ширина второй колонки */
+      }
+    }
+    &.isActive &__head {
+      background-color: #1c1c1c;
+      color: #fff;
+      // position: sticky;
+      // top: 70px;
+      // z-index: 2;
+
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+    &.isActive &__body {
+      display: block;
+      opacity: 1;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+}

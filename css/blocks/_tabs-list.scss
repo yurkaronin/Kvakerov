@@ -1,0 +1,24 @@
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  // max-width: calc(100% + 20px);
+  max-width: 100%;
+  margin-right: -20px;
+  &__item {
+    max-width: max-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    border-radius: 30px 30px 30px 0;
+    max-width: max-content;
+    height: 52px;
+    background: var(--yellow);
+    padding: 10px 26px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black-text);
+    border: none;
+  }
+}
