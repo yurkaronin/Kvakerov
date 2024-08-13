@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   // Первый экран на главной hero-home__slider
   if (document.querySelector(".hero-home__slider")) {
     const swiper = new Swiper(".hero-home__slider .swiper", {
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true,
       },
     });
-  };
+  }
 
   // Слайдер с отзывами reviews__slider
   if (document.querySelector(".reviews__slider")) {
@@ -31,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation: {
         nextEl: ".reviews .swiper-button-next",
         prevEl: ".reviews .swiper-button-prev",
-      }
+      },
     });
-  };
+  }
 
   // Слайдер о компании с одним слайдом за раз
   if (document.querySelector(".about-slider")) {
@@ -48,15 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation: {
         nextEl: ".about-slider .swiper-button-next",
         prevEl: ".about-slider .swiper-button-prev",
-      }
+      },
     });
-  };
+  }
 
   // продукты сортировки
   if (document.querySelector(".js-product-slider")) {
     const swiper = new Swiper(".js-product-slider .swiper", {
       spaceBetween: 30,
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       loop: true,
 
       autoplay: {
@@ -67,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation: {
         nextEl: ".js-product-slider .swiper-button-next",
         prevEl: ".js-product-slider .swiper-button-prev",
-      }
+      },
     });
-  };
+  }
 
   // Слайдер с логотипами партнёров
   if (document.querySelector(".partners__slider")) {
@@ -107,12 +106,12 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
-  };
+  }
 
   // Слайдер с кастомными отзывами
   if (document.querySelector(".custom-review__slider")) {
     const swiper = new Swiper(".custom-review__slider .swiper", {
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       spaceBetween: 30,
       loop: true,
       autoplay: {
@@ -128,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: ".custom-review .swiper-button-prev",
       },
     });
-  };
+  }
 
   // Слайдер с фотогалереей на всю ширину
   if (document.querySelector(".photo-slider")) {
@@ -201,15 +200,50 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
-  };
+  }
 
   // Слайдер с большими фото в карточке товаров
-  if(document.querySelector(".js-product-card-slider")) {
+  if (document.querySelector(".js-product-card-slider")) {
     var swiper = new Swiper(".js-product-card-slider", {
-      navigation: {
-        nextEl: ".js-product-card-slider .swiper-button-next",
-        prevEl: ".js-product-card-slider .swiper-button-prev",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 25000,
+        disableOnInteraction: false,
       },
     });
+
+    // Получение всех миниатюр
+    var thumbnails = document.querySelectorAll(".card-thumbnails__link");
+    var activeClass = "isActive"; // Название активного класса
+
+    // Функция для обновления активного класса на миниатюрах
+    function updateActiveThumbnail() {
+      thumbnails.forEach(function (thumbnail, index) {
+        if (index === swiper.realIndex) {
+          // swiper.realIndex учитывает loop в swiper
+          thumbnail.classList.add(activeClass);
+        } else {
+          thumbnail.classList.remove(activeClass);
+        }
+      });
+    }
+
+    // Добавление обработчика клика на каждую миниатюру
+    thumbnails.forEach(function (thumbnail, index) {
+      thumbnail.addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.slideTo(index); // Переключение слайдера на индекс, соответствующий миниатюре
+      });
+    });
+
+    // Обработчик события 'slideChange' для Swiper
+    swiper.on("slideChange", function () {
+      updateActiveThumbnail(); // Обновление активного класса при смене слайда
+    });
+
+    // Инициализация активного класса при загрузке страницы
+    updateActiveThumbnail();
   }
 });

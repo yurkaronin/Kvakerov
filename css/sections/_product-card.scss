@@ -2,7 +2,7 @@
   &__top-grid {
     display: grid;
     gap: 98px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
     width: 100%;
     max-width: 100%;
   }
@@ -10,13 +10,16 @@
   &__top {
     background: #fff;
     border-radius: 30px 0 0 0;
-    padding: 45px 32px 45px 45px;
+    padding: 45px 32px 55px 45px;
   }
 
   &__top-grid {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  &__slider {
+    margin-bottom: 20px;
   }
 
   &__label {
@@ -37,45 +40,56 @@
 
   &__price {
     display: block;
-    margin-bottom: 40px;
+
     max-width: max-content;
     font-weight: 600;
     font-size: 35px;
     line-height: 100%;
     color: var(--black-text);
+    margin-bottom: 30px;
+  }
+  &__hint {
+    display: block;
+    margin: 0;
+    color: #b5b5b5;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  &__button {
+    margin-bottom: 40px;
   }
 
   &__gallery {
-    max-width: 383px;
-    width: 100%;
-  }
-  &__slider {
-    border: 1px solid #b5b5b5;
   }
 
   @media (max-width: 1023px) {
     &__top-grid {
-      display: grid;
-      gap: 23px;
+      display: block;
+    }
+    &__top {
+      padding: 45px 23px 45px 35px;
+    }
+    &__slider {
+      margin-bottom: 15px;
+    }
+    &__price {
+      margin-bottom: 40px;
+    }
+    &__label {
+      font-size: 12px;
     }
   }
 
+  @media (max-width: 767px) {
+    &__top-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
 
-
-}
-
-.swiper {
-  width: 100%;
-}
-
-.card-thumbnails {
-  &__list {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  &__link {
-    display: block;
+    &__gallery {
+      margin-bottom: 30px;
+      width: 100%;
+    }
   }
 }
