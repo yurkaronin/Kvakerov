@@ -329,27 +329,27 @@
           <!-- табы только десктоп -->
           <ul class="product-card__tabs-list tabs-list list-reset">
             <li class="tabs-list__item">
-              <button class="tabs-list__btn" type="button">Описание</button>
+              <button class="tabs-list__btn" type="button" data-tab-target="#tab-description">Описание</button>
             </li>
             <li class="tabs-list__item">
-              <button class="tabs-list__btn" type="button">Продукты</button>
+              <button class="tabs-list__btn" type="button" data-tab-target="#tab-product">Продукты</button>
             </li>
             <li class="tabs-list__item">
-              <button class="tabs-list__btn" type="button">Испытания</button>
+              <button class="tabs-list__btn" type="button" data-tab-target="#tab-test">Испытания</button>
             </li>
             <li class="tabs-list__item">
-              <button class="tabs-list__btn" type="button">Сервис</button>
+              <button class="tabs-list__btn" type="button" data-tab-target="#tab-services">Сервис</button>
             </li>
             <li class="tabs-list__item">
-              <button class="tabs-list__btn" type="button">Технические характеристики</button>
+              <button class="tabs-list__btn" type="button" data-tab-target="#tab-specifications">Технические характеристики</button>
             </li>
             <li class="tabs-list__item">
-              <button class="tabs-list__btn" type="button">Оплата и доставка</button>
+              <button class="tabs-list__btn" type="button" data-tab-target="#tab-payment-delivery">Оплата и доставка</button>
             </li>
           </ul>
 
           <!-- аккордеон Описание -->
-          <div class="product-accordion">
+          <div class="product-accordion" id="tab-description" data-tab-content>
             <!-- Шапка только на мобилках  -->
             <div class="product-accordion__head">
               <span>Описание</span>
@@ -415,7 +415,7 @@
           </div>
 
           <!-- аккордеон продукты -->
-          <div class="product-accordion">
+          <div class="product-accordion" id="tab-product" data-tab-content>
             <!-- Шапка только на мобилках  -->
             <div class="product-accordion__head">
               <span>Продукты</span>
@@ -427,58 +427,85 @@
             </div>
             <div class="product-accordion__body">
 
-              <table>
-                <caption>Пример таблицы</caption>
-                <tr>
-                    <th>Параметр</th>
-                    <th>Описание</th>
-                </tr>
-                <tr>
-                    <td>Производительность</td>
-                    <td>до 10 т/час</td>
-                </tr>
-                <tr>
-                    <td>Полный цикл обработки семян</td>
-                    <td>первичная и вторичная очистка, сортировка, упаковка с автоматическим весоизмерителем, зашиватель мешков.</td>
-                </tr>
-                <tr>
-                    <td>Линия удаляет</td>
-                    <td>пыль, шелуху, камни, семена с низкой энергией роста (сорные семена, загрязненные, пророщенные и пустотелые), карантинные засорители, колотые, сорняки, кусочки стекла, мешковину, пластику и другие примеси;</td>
-                </tr>
-                <tr>
-                    <td>Сортирует</td>
-                    <td>на крупные, средние и мелкие фракции, а также по удельному весу, форме, цвету, внутренней структуре.</td>
-                </tr>
-                <tr>
-                    <td>Чистота сортировки</td>
-                    <td>до 99,99%</td>
-                </tr>
-            </table>
-              <h3>Механика работы</h3>
-
-              <p>Через ковшовый погрузчик сырьё поступает в напольный бункер, сопряженный с тихоходной норией
-                и далее направляется в воздушно-решетный сепаратор, а затем в камнеотборник для первичной очистки. После
-                первичной очистки зерно подается на пневмостол, где под воздействием регулируемого воздушного потока и
-                вибрации проходит вторичную очистку. После первых двух этапов сырье проходит финальную очистку на
-                фотосепараторе и уже потом подаётся на фасовку в упаковочную машину
-                с автоматическим весоизмерителем, программируемым контроллером, зашивателем мешков
-                и конвейерной лентой.</p>
-                <h3>Пример простого списка</h3>
-                <ul>
-                  <li>Первый пункт</li>
-                  <li>Второй пункт</li>
-                  <li>Третий пункт</li>
-                  <li>Четвёртый пункт</li>
-                </ul>
-                <h3>Пример номерованного списка</h3>
-                <ol>
-                  <li>Первый пункт</li>
-                  <li>Второй пункт</li>
-                  <li>Третий пункт</li>
-                  <li>Четвёртый пункт</li>
-                </ol>
+              <h3>Содерджимое вкладки про продукты</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eum tenetur ipsum nulla dolorum, perspiciatis nesciunt commodi maxime recusandae nisi culpa. Commodi odio molestiae nostrum praesentium accusantium, a deserunt eligendi vel dolores tempore quia quod laudantium recusandae reiciendis ut iusto quas exercitationem incidunt impedit ea. Temporibus necessitatibus magni, aut explicabo ratione incidunt, eum quasi voluptates aspernatur tempore veniam ex quis est saepe perspiciatis perferendis odit inventore natus obcaecati recusandae quas, delectus assumenda. Perferendis iste atque nostrum iure hic facere ab suscipit, dolorum maiores sequi numquam sapiente? Incidunt rem placeat obcaecati earum provident! Dignissimos non ratione magnam, hic iure assumenda cumque voluptate labore dolore totam eveniet reprehenderit necessitatibus fugiat accusamus iste cupiditate dolor!</p>
             </div>
           </div>
+
+          <!-- аккордеон Испытания -->
+          <div class="product-accordion" id="tab-test" data-tab-content>
+            <!-- Шапка только на мобилках  -->
+            <div class="product-accordion__head">
+              <span>Испытания</span>
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 9L10 2L18 9" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="product-accordion__body">
+
+              <h3>Содерджимое вкладки про Испытания</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eum tenetur ipsum nulla dolorum, perspiciatis nesciunt commodi maxime recusandae nisi culpa. Commodi odio molestiae nostrum praesentium accusantium, a deserunt eligendi vel dolores tempore quia quod laudantium recusandae reiciendis ut iusto quas exercitationem incidunt impedit ea. Temporibus necessitatibus magni, aut explicabo ratione incidunt, eum quasi voluptates aspernatur tempore veniam ex quis est saepe perspiciatis perferendis odit inventore natus obcaecati recusandae quas, delectus assumenda. Perferendis iste atque nostrum iure hic facere ab suscipit, dolorum maiores sequi numquam sapiente? Incidunt rem placeat obcaecati earum provident! Dignissimos non ratione magnam, hic iure assumenda cumque voluptate labore dolore totam eveniet reprehenderit necessitatibus fugiat accusamus iste cupiditate dolor!</p>
+            </div>
+          </div>
+
+          <!-- аккордеон Сервис -->
+          <div class="product-accordion" id="tab-services" data-tab-content>
+            <!-- Шапка только на мобилках  -->
+            <div class="product-accordion__head">
+              <span>Сервис</span>
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 9L10 2L18 9" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="product-accordion__body">
+
+              <h3>Содерджимое вкладки про Сервис</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eum tenetur ipsum nulla dolorum, perspiciatis nesciunt commodi maxime recusandae nisi culpa. Commodi odio molestiae nostrum praesentium accusantium, a deserunt eligendi vel dolores tempore quia quod laudantium recusandae reiciendis ut iusto quas exercitationem incidunt impedit ea. Temporibus necessitatibus magni, aut explicabo ratione incidunt, eum quasi voluptates aspernatur tempore veniam ex quis est saepe perspiciatis perferendis odit inventore natus obcaecati recusandae quas, delectus assumenda. Perferendis iste atque nostrum iure hic facere ab suscipit, dolorum maiores sequi numquam sapiente? Incidunt rem placeat obcaecati earum provident! Dignissimos non ratione magnam, hic iure assumenda cumque voluptate labore dolore totam eveniet reprehenderit necessitatibus fugiat accusamus iste cupiditate dolor!</p>
+            </div>
+          </div>
+
+          <!-- аккордеон Технические характеристики -->
+          <div class="product-accordion" id="tab-specifications" data-tab-content>
+            <!-- Шапка только на мобилках  -->
+            <div class="product-accordion__head">
+              <span>Технические характеристики</span>
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 9L10 2L18 9" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="product-accordion__body">
+
+              <h3>Содерджимое вкладки про Технические характеристики</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eum tenetur ipsum nulla dolorum, perspiciatis nesciunt commodi maxime recusandae nisi culpa. Commodi odio molestiae nostrum praesentium accusantium, a deserunt eligendi vel dolores tempore quia quod laudantium recusandae reiciendis ut iusto quas exercitationem incidunt impedit ea. Temporibus necessitatibus magni, aut explicabo ratione incidunt, eum quasi voluptates aspernatur tempore veniam ex quis est saepe perspiciatis perferendis odit inventore natus obcaecati recusandae quas, delectus assumenda. Perferendis iste atque nostrum iure hic facere ab suscipit, dolorum maiores sequi numquam sapiente? Incidunt rem placeat obcaecati earum provident! Dignissimos non ratione magnam, hic iure assumenda cumque voluptate labore dolore totam eveniet reprehenderit necessitatibus fugiat accusamus iste cupiditate dolor!</p>
+            </div>
+          </div>
+
+          <!-- аккордеон Оплата и доставка -->
+          <div class="product-accordion" id="tab-payment-delivery" data-tab-content>
+            <!-- Шапка только на мобилках  -->
+            <div class="product-accordion__head">
+              <span>Оплата и доставка</span>
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 9L10 2L18 9" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="product-accordion__body">
+
+              <h3>Содерджимое вкладки про Оплату и доставку</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eum tenetur ipsum nulla dolorum, perspiciatis nesciunt commodi maxime recusandae nisi culpa. Commodi odio molestiae nostrum praesentium accusantium, a deserunt eligendi vel dolores tempore quia quod laudantium recusandae reiciendis ut iusto quas exercitationem incidunt impedit ea. Temporibus necessitatibus magni, aut explicabo ratione incidunt, eum quasi voluptates aspernatur tempore veniam ex quis est saepe perspiciatis perferendis odit inventore natus obcaecati recusandae quas, delectus assumenda. Perferendis iste atque nostrum iure hic facere ab suscipit, dolorum maiores sequi numquam sapiente? Incidunt rem placeat obcaecati earum provident! Dignissimos non ratione magnam, hic iure assumenda cumque voluptate labore dolore totam eveniet reprehenderit necessitatibus fugiat accusamus iste cupiditate dolor!</p>
+            </div>
+          </div>
+
+
+
         </div>
 
       </div>
@@ -956,6 +983,7 @@
   <script src="./js/parts/modals.js"></script>
   <script src="./js/parts/just-main-padding.js"></script>
   <script src="./js/parts/product-card-accordion.js"></script>
+  <script src="./js/parts/product-card-desktop-tab.js"></script>
 
   <script src="./js/main.js"></script>
 </body>
